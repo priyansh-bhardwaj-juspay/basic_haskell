@@ -20,6 +20,16 @@ mkErrorResponse message code =
 mkPersonResponse :: Maybe Text -> HT.Person -> HT.PersonResponse
 mkPersonResponse message person = mkSuccessResponse message person
 
+mkPersonResponse' :: Maybe Text -> String -> Int -> HT.PersonResponse
+mkPersonResponse' message name age =
+  HT.Success
+    { message = message
+    , payload = HT.Person
+      { name = name
+      , age = age
+      }
+    }
+
 mkPerson :: String -> Int -> HT.Person
 mkPerson name age =
   HT.Person
@@ -31,3 +41,9 @@ mkMessage :: Text -> HT.Message
 mkMessage message = HT.Message
   { message = message
   }
+
+data TcpResponse a = HttpResponse
+  { httpCode :: String
+  , body :: HT.Response a
+  }
+

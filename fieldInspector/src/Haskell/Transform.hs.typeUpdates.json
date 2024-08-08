@@ -8,7 +8,7 @@
                 "fieldsVsExprs": {
                     "Left": [
                         {
-                            "expression": "message_a3n2",
+                            "expression": "message_a3nh",
                             "field_name": "message",
                             "field_type": "$v$message$message"
                         }
@@ -27,12 +27,53 @@
                 "fieldsVsExprs": {
                     "Left": [
                         {
-                            "expression": "name_a3n0",
+                            "expression": "name_a3nf",
                             "field_name": "name",
                             "field_type": "$v$name$name"
                         },
                         {
-                            "expression": "age_a3n1",
+                            "expression": "age_a3ng",
+                            "field_name": "age",
+                            "field_type": "$v$age$age"
+                        }
+                    ]
+                },
+                "type_name": "$main$Haskell.Types$Person"
+            }
+        ]
+    },
+    {
+        "function_name_": [
+            "$_in$mkPersonResponse'"
+        ],
+        "typeVsFields": [
+            {
+                "fieldsVsExprs": {
+                    "Left": [
+                        {
+                            "expression": "message_a3nc",
+                            "field_name": "message",
+                            "field_type": "$v$message$message"
+                        },
+                        {
+                            "expression": "Person {name = name_a3nd, age = age_a3ne}",
+                            "field_name": "payload",
+                            "field_type": "$v$payload$payload"
+                        }
+                    ]
+                },
+                "type_name": "$main$Haskell.Types$Success"
+            },
+            {
+                "fieldsVsExprs": {
+                    "Left": [
+                        {
+                            "expression": "name_a3nd",
+                            "field_name": "name",
+                            "field_type": "$v$name$name"
+                        },
+                        {
+                            "expression": "age_a3ne",
                             "field_name": "age",
                             "field_type": "$v$age$age"
                         }
@@ -51,12 +92,12 @@
                 "fieldsVsExprs": {
                     "Left": [
                         {
-                            "expression": "code_a3mX",
+                            "expression": "code_a3n9",
                             "field_name": "code",
                             "field_type": "$v$code$code"
                         },
                         {
-                            "expression": "message_a3mW",
+                            "expression": "message_a3n8",
                             "field_name": "message",
                             "field_type": "$v$message$message"
                         }
@@ -75,18 +116,56 @@
                 "fieldsVsExprs": {
                     "Left": [
                         {
-                            "expression": "message_a3mT",
+                            "expression": "message_a3n5",
                             "field_name": "message",
                             "field_type": "$v$message$message"
                         },
                         {
-                            "expression": "payload_a3mU",
+                            "expression": "payload_a3n6",
                             "field_name": "payload",
                             "field_type": "$v$payload$payload"
                         }
                     ]
                 },
                 "type_name": "$main$Haskell.Types$Success"
+            }
+        ]
+    },
+    {
+        "function_name_": [
+            "$_in$hasField"
+        ],
+        "typeVsFields": [
+            {
+                "fieldsVsExprs": {
+                    "Left": [
+                        {
+                            "expression": "x_a3mZ",
+                            "field_name": "body",
+                            "field_type": "$v$body$body"
+                        }
+                    ]
+                },
+                "type_name": "r_a3mY"
+            }
+        ]
+    },
+    {
+        "function_name_": [
+            "$_in$hasField"
+        ],
+        "typeVsFields": [
+            {
+                "fieldsVsExprs": {
+                    "Left": [
+                        {
+                            "expression": "x_a3n2",
+                            "field_name": "httpCode",
+                            "field_type": "$v$httpCode$httpCode"
+                        }
+                    ]
+                },
+                "type_name": "r_a3n1"
             }
         ]
     }

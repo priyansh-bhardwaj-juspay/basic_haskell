@@ -1,7 +1,22 @@
 {
     "Haskell.Basic": {},
     "Haskell.Compute": {},
-    "Haskell.Transform": {},
+    "Haskell.Transform": {
+        "TcpResponse": {
+            "dataConstructors": [
+                {
+                    "dataConNames": "HttpResponse",
+                    "fields": {
+                        "body": "HT.Response a",
+                        "httpCode": "String"
+                    },
+                    "sumTypes": []
+                }
+            ],
+            "name": "TcpResponse",
+            "typeKind": "data"
+        }
+    },
     "Haskell.Types": {
         "Days": {
             "dataConstructors": [

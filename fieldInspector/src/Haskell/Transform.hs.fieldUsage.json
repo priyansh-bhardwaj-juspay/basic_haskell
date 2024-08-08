@@ -1,7 +1,122 @@
 {
+    "$_in$$chasField": [
+        {
+            "beautifiedCode": "ds_d3rn",
+            "fieldName": "HttpResponse",
+            "fieldType": "String",
+            "typeName": "TcpResponse",
+            "typeSrcLoc": "$main$Haskell.Transform$TcpResponse"
+        },
+        {
+            "beautifiedCode": "ds_d3ro",
+            "fieldName": "HttpResponse",
+            "fieldType": "Response a_a3pM",
+            "typeName": "TcpResponse",
+            "typeSrcLoc": "$main$Haskell.Transform$TcpResponse"
+        },
+        {
+            "beautifiedCode": "ds_d3rB",
+            "fieldName": "HttpResponse",
+            "fieldType": "String",
+            "typeName": "TcpResponse",
+            "typeSrcLoc": "$main$Haskell.Transform$TcpResponse"
+        },
+        {
+            "beautifiedCode": "ds_d3rC",
+            "fieldName": "HttpResponse",
+            "fieldType": "Response a_a3qa",
+            "typeName": "TcpResponse",
+            "typeSrcLoc": "$main$Haskell.Transform$TcpResponse"
+        }
+    ],
+    "$_sys$$krep": [
+        {
+            "beautifiedCode": "KindRepTyConApp $tcChar",
+            "fieldName": "KindRepTyConApp",
+            "fieldType": "KindRep",
+            "typeName": "TyCon",
+            "typeSrcLoc": "$ghc-prim$GHC.Types$TyCon"
+        },
+        {
+            "beautifiedCode": "KindRepTyConApp $tc[]",
+            "fieldName": "KindRepTyConApp",
+            "fieldType": "KindRep",
+            "typeName": "TyCon",
+            "typeSrcLoc": "$ghc-prim$GHC.Types$TyCon"
+        },
+        {
+            "beautifiedCode": "KindRepTyConApp $tcResponse",
+            "fieldName": "KindRepTyConApp",
+            "fieldType": "KindRep",
+            "typeName": "TyCon",
+            "typeSrcLoc": "$ghc-prim$GHC.Types$TyCon"
+        },
+        {
+            "beautifiedCode": "KindRepTyConApp $tcTcpResponse",
+            "fieldName": "KindRepTyConApp",
+            "fieldType": "KindRep",
+            "typeName": "TyCon",
+            "typeSrcLoc": "$ghc-prim$GHC.Types$TyCon"
+        },
+        {
+            "beautifiedCode": "KindRepFun $krep_a3qM",
+            "fieldName": "KindRepFun",
+            "fieldType": "KindRep",
+            "typeName": "KindRep",
+            "typeSrcLoc": "$ghc-prim$GHC.Types$KindRep"
+        },
+        {
+            "beautifiedCode": "KindRepFun $krep_a3qJ",
+            "fieldName": "KindRepFun",
+            "fieldType": "KindRep",
+            "typeName": "KindRep",
+            "typeSrcLoc": "$ghc-prim$GHC.Types$KindRep"
+        }
+    ],
+    "$main$Haskell.Transform$$sel:body:HttpResponse": [
+        {
+            "beautifiedCode": "ds_d3ra",
+            "fieldName": "HttpResponse",
+            "fieldType": "String",
+            "typeName": "TcpResponse",
+            "typeSrcLoc": "$main$Haskell.Transform$TcpResponse"
+        },
+        {
+            "beautifiedCode": "ds_d3rb",
+            "fieldName": "HttpResponse",
+            "fieldType": "Response a_a3nC",
+            "typeName": "TcpResponse",
+            "typeSrcLoc": "$main$Haskell.Transform$TcpResponse"
+        }
+    ],
+    "$main$Haskell.Transform$$sel:httpCode:HttpResponse": [
+        {
+            "beautifiedCode": "ds_d3r7",
+            "fieldName": "HttpResponse",
+            "fieldType": "String",
+            "typeName": "TcpResponse",
+            "typeSrcLoc": "$main$Haskell.Transform$TcpResponse"
+        },
+        {
+            "beautifiedCode": "ds_d3r8",
+            "fieldName": "HttpResponse",
+            "fieldType": "Response a_a3nA",
+            "typeName": "TcpResponse",
+            "typeSrcLoc": "$main$Haskell.Transform$TcpResponse"
+        }
+    ],
     "$main$Haskell.Transform$mkPerson": [
         {
-            "beautifiedCode": "Person name_a3n0",
+            "beautifiedCode": "Person name_a3nf",
+            "fieldName": "Person",
+            "fieldType": "Person",
+            "typeName": "String",
+            "typeSrcLoc": "$base$GHC.Base$String"
+        }
+    ],
+    "$main$Haskell.Transform$mkPersonResponse'": [
+        {
+            "beautifiedCode": "Person name_a3nd",
             "fieldName": "Person",
             "fieldType": "Person",
             "typeName": "String",

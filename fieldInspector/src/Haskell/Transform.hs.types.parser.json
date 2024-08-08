@@ -1,1 +1,16 @@
-{}
+{
+    "TcpResponse": {
+        "dataConstructors": [
+            {
+                "dataConNames": "HttpResponse",
+                "fields": {
+                    "body": "HT.Response a",
+                    "httpCode": "String"
+                },
+                "sumTypes": []
+            }
+        ],
+        "name": "TcpResponse",
+        "typeKind": "data"
+    }
+}
