@@ -1,0 +1,50 @@
+[
+    {
+        "function_name_": [
+            "$_in$mkErrorResponse"
+        ],
+        "typeVsFields": [
+            {
+                "fieldsVsExprs": {
+                    "Left": [
+                        {
+                            "expression": "code_a2HW",
+                            "field_name": "code",
+                            "field_type": "$v$code$code"
+                        },
+                        {
+                            "expression": "message_a2HV",
+                            "field_name": "message",
+                            "field_type": "$v$message$message"
+                        }
+                    ]
+                },
+                "type_name": "$main$Haskell.Types$Failure"
+            }
+        ]
+    },
+    {
+        "function_name_": [
+            "$_in$mkSuccessResponse"
+        ],
+        "typeVsFields": [
+            {
+                "fieldsVsExprs": {
+                    "Left": [
+                        {
+                            "expression": "message_a2HS",
+                            "field_name": "message",
+                            "field_type": "$v$message$message"
+                        },
+                        {
+                            "expression": "payload_a2HT",
+                            "field_name": "payload",
+                            "field_type": "$v$payload$payload"
+                        }
+                    ]
+                },
+                "type_name": "$main$Haskell.Types$Success"
+            }
+        ]
+    }
+]

@@ -1,0 +1,105 @@
+{
+    "Days": {
+        "dataConstructors": [
+            {
+                "dataConNames": "Monday",
+                "fields": {},
+                "sumTypes": []
+            },
+            {
+                "dataConNames": "Tuesday",
+                "fields": {},
+                "sumTypes": []
+            },
+            {
+                "dataConNames": "Wednesday",
+                "fields": {},
+                "sumTypes": []
+            },
+            {
+                "dataConNames": "Thursday",
+                "fields": {},
+                "sumTypes": []
+            },
+            {
+                "dataConNames": "Friday",
+                "fields": {},
+                "sumTypes": []
+            },
+            {
+                "dataConNames": "Saturday",
+                "fields": {},
+                "sumTypes": []
+            },
+            {
+                "dataConNames": "Sunday",
+                "fields": {},
+                "sumTypes": []
+            }
+        ],
+        "name": "Days",
+        "typeKind": "data"
+    },
+    "Message": {
+        "dataConstructors": [
+            {
+                "dataConNames": "Message",
+                "fields": {
+                    "message": "Text"
+                },
+                "sumTypes": []
+            }
+        ],
+        "name": "Message",
+        "typeKind": "data"
+    },
+    "Person": {
+        "dataConstructors": [
+            {
+                "dataConNames": "Person",
+                "fields": {
+                    "age": "Int",
+                    "name": "String"
+                },
+                "sumTypes": []
+            }
+        ],
+        "name": "Person",
+        "typeKind": "data"
+    },
+    "PersonResponse": {
+        "dataConstructors": [
+            {
+                "dataConNames": "PersonResponse",
+                "fields": {
+                    "synonym": "Response Person"
+                },
+                "sumTypes": []
+            }
+        ],
+        "name": "PersonResponse",
+        "typeKind": "type"
+    },
+    "Response": {
+        "dataConstructors": [
+            {
+                "dataConNames": "Success",
+                "fields": {
+                    "message": "Maybe Text",
+                    "payload": "a"
+                },
+                "sumTypes": []
+            },
+            {
+                "dataConNames": "Failure",
+                "fields": {
+                    "code": "String",
+                    "message": "Maybe Text"
+                },
+                "sumTypes": []
+            }
+        ],
+        "name": "Response",
+        "typeKind": "data"
+    }
+}

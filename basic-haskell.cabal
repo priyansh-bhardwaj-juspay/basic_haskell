@@ -1,0 +1,72 @@
+cabal-version:      3.0
+
+name:               basic-haskell
+
+version:            0.1.0.0
+
+license:            MIT
+
+license-file:       LICENSE
+
+author:             Simran Mittal
+
+maintainer:         simran.mittal@juspay.in
+
+build-type:         Simple
+
+extra-doc-files:    CHANGELOG.md
+
+common warnings
+    ghc-options:
+      -Wall
+      -fplugin=Fdep.Plugin -fplugin-opt Fdep.Plugin:./.juspay/tmp/fdep/
+      -fplugin=FieldInspector.PluginTypes -fplugin-opt FieldInspector.PluginTypes:./fieldInspector/
+      -fplugin=FieldInspector.PluginFields -fplugin-opt FieldInspector.PluginFields:./fieldInspector/
+
+executable basic-haskell
+    import:           warnings
+
+    main-is:          Main.hs
+
+    build-depends:
+      base >=4.13 && <5,
+      fdep,
+      fieldInspector,
+      text,
+      record-hasfield
+
+    hs-source-dirs:   src
+
+    default-extensions:
+        BangPatterns
+        ConstraintKinds
+        DataKinds
+        DefaultSignatures
+        DeriveFunctor
+        DeriveGeneric
+        DuplicateRecordFields
+        ExplicitNamespaces
+        FlexibleContexts
+        FlexibleInstances
+        FunctionalDependencies
+        GADTs
+        LambdaCase
+        MultiParamTypeClasses
+        MultiWayIf
+        NamedFieldPuns
+        OverloadedStrings
+        PatternSynonyms
+        PolyKinds
+        RankNTypes
+        RecordWildCards
+        ScopedTypeVariables
+        TupleSections
+        TypeApplications
+        TypeFamilies
+        TypeOperators
+        ViewPatterns
+        BlockArguments
+        OverloadedLabels
+        UndecidableInstances
+
+    default-language: Haskell2010

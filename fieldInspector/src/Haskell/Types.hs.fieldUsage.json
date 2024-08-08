@@ -1,0 +1,324 @@
+{
+    "$_in$$chasField": [
+        {
+            "beautifiedCode": "ds_d2rI",
+            "fieldName": "Person",
+            "fieldType": "String",
+            "typeName": "Person",
+            "typeSrcLoc": "$main$Haskell.Types$Person"
+        },
+        {
+            "beautifiedCode": "ds_d2rJ",
+            "fieldName": "Person",
+            "fieldType": "Int",
+            "typeName": "Person",
+            "typeSrcLoc": "$main$Haskell.Types$Person"
+        },
+        {
+            "beautifiedCode": "Person ds_d2rI",
+            "fieldName": "Person",
+            "fieldType": "Person",
+            "typeName": "String",
+            "typeSrcLoc": "$base$GHC.Base$String"
+        },
+        {
+            "beautifiedCode": "$sel:age:Person r_a2i7",
+            "fieldName": "$sel:age:Person",
+            "fieldType": "Int",
+            "typeName": "Person",
+            "typeSrcLoc": "$main$Haskell.Types$Person"
+        },
+        {
+            "beautifiedCode": "ds_d2rW",
+            "fieldName": "Person",
+            "fieldType": "String",
+            "typeName": "Person",
+            "typeSrcLoc": "$main$Haskell.Types$Person"
+        },
+        {
+            "beautifiedCode": "ds_d2rX",
+            "fieldName": "Person",
+            "fieldType": "Int",
+            "typeName": "Person",
+            "typeSrcLoc": "$main$Haskell.Types$Person"
+        },
+        {
+            "beautifiedCode": "$sel:name:Person r_a2i9",
+            "fieldName": "$sel:name:Person",
+            "fieldType": "String",
+            "typeName": "Person",
+            "typeSrcLoc": "$main$Haskell.Types$Person"
+        },
+        {
+            "beautifiedCode": "ds_d2qM",
+            "fieldName": "Failure",
+            "fieldType": "String",
+            "typeName": "Response",
+            "typeSrcLoc": "$main$Haskell.Types$Response"
+        },
+        {
+            "beautifiedCode": "ds_d2qN",
+            "fieldName": "Failure",
+            "fieldType": "Maybe Text",
+            "typeName": "Response",
+            "typeSrcLoc": "$main$Haskell.Types$Response"
+        },
+        {
+            "beautifiedCode": "ds_d2r5",
+            "fieldName": "Success",
+            "fieldType": "Maybe Text",
+            "typeName": "Response",
+            "typeSrcLoc": "$main$Haskell.Types$Response"
+        },
+        {
+            "beautifiedCode": "ds_d2r6",
+            "fieldName": "Success",
+            "fieldType": "a_a2nK",
+            "typeName": "Response",
+            "typeSrcLoc": "$main$Haskell.Types$Response"
+        },
+        {
+            "beautifiedCode": "ds_d2rq",
+            "fieldName": "Success",
+            "fieldType": "Maybe Text",
+            "typeName": "Response",
+            "typeSrcLoc": "$main$Haskell.Types$Response"
+        },
+        {
+            "beautifiedCode": "ds_d2rr",
+            "fieldName": "Success",
+            "fieldType": "a_a2o8",
+            "typeName": "Response",
+            "typeSrcLoc": "$main$Haskell.Types$Response"
+        },
+        {
+            "beautifiedCode": "ds_d2rs",
+            "fieldName": "Failure",
+            "fieldType": "String",
+            "typeName": "Response",
+            "typeSrcLoc": "$main$Haskell.Types$Response"
+        },
+        {
+            "beautifiedCode": "ds_d2rt",
+            "fieldName": "Failure",
+            "fieldType": "Maybe Text",
+            "typeName": "Response",
+            "typeSrcLoc": "$main$Haskell.Types$Response"
+        },
+        {
+            "beautifiedCode": "$sel:message:Message r_a2hW",
+            "fieldName": "$sel:message:Message",
+            "fieldType": "Text",
+            "typeName": "Message",
+            "typeSrcLoc": "$main$Haskell.Types$Message"
+        }
+    ],
+    "$_sys$$krep": [
+        {
+            "beautifiedCode": "KindRepTyConApp $tcInt",
+            "fieldName": "KindRepTyConApp",
+            "fieldType": "KindRep",
+            "typeName": "TyCon",
+            "typeSrcLoc": "$ghc-prim$GHC.Types$TyCon"
+        },
+        {
+            "beautifiedCode": "KindRepTyConApp $tcChar",
+            "fieldName": "KindRepTyConApp",
+            "fieldType": "KindRep",
+            "typeName": "TyCon",
+            "typeSrcLoc": "$ghc-prim$GHC.Types$TyCon"
+        },
+        {
+            "beautifiedCode": "KindRepTyConApp $tcText",
+            "fieldName": "KindRepTyConApp",
+            "fieldType": "KindRep",
+            "typeName": "TyCon",
+            "typeSrcLoc": "$ghc-prim$GHC.Types$TyCon"
+        },
+        {
+            "beautifiedCode": "KindRepTyConApp $tc[]",
+            "fieldName": "KindRepTyConApp",
+            "fieldType": "KindRep",
+            "typeName": "TyCon",
+            "typeSrcLoc": "$ghc-prim$GHC.Types$TyCon"
+        },
+        {
+            "beautifiedCode": "KindRepTyConApp $tcMaybe",
+            "fieldName": "KindRepTyConApp",
+            "fieldType": "KindRep",
+            "typeName": "TyCon",
+            "typeSrcLoc": "$ghc-prim$GHC.Types$TyCon"
+        },
+        {
+            "beautifiedCode": "KindRepTyConApp $tcPerson",
+            "fieldName": "KindRepTyConApp",
+            "fieldType": "KindRep",
+            "typeName": "TyCon",
+            "typeSrcLoc": "$ghc-prim$GHC.Types$TyCon"
+        },
+        {
+            "beautifiedCode": "KindRepFun $krep_a2pQ",
+            "fieldName": "KindRepFun",
+            "fieldType": "KindRep",
+            "typeName": "KindRep",
+            "typeSrcLoc": "$ghc-prim$GHC.Types$KindRep"
+        },
+        {
+            "beautifiedCode": "KindRepFun $krep_a2pK",
+            "fieldName": "KindRepFun",
+            "fieldType": "KindRep",
+            "typeName": "KindRep",
+            "typeSrcLoc": "$ghc-prim$GHC.Types$KindRep"
+        },
+        {
+            "beautifiedCode": "KindRepTyConApp $tcDays",
+            "fieldName": "KindRepTyConApp",
+            "fieldType": "KindRep",
+            "typeName": "TyCon",
+            "typeSrcLoc": "$ghc-prim$GHC.Types$TyCon"
+        },
+        {
+            "beautifiedCode": "KindRepTyConApp $tcResponse",
+            "fieldName": "KindRepTyConApp",
+            "fieldType": "KindRep",
+            "typeName": "TyCon",
+            "typeSrcLoc": "$ghc-prim$GHC.Types$TyCon"
+        },
+        {
+            "beautifiedCode": "KindRepFun $krep_a2pH",
+            "fieldName": "KindRepFun",
+            "fieldType": "KindRep",
+            "typeName": "KindRep",
+            "typeSrcLoc": "$ghc-prim$GHC.Types$KindRep"
+        },
+        {
+            "beautifiedCode": "KindRepFun $krep_a2pF",
+            "fieldName": "KindRepFun",
+            "fieldType": "KindRep",
+            "typeName": "KindRep",
+            "typeSrcLoc": "$ghc-prim$GHC.Types$KindRep"
+        },
+        {
+            "beautifiedCode": "KindRepFun $krep_a2pF",
+            "fieldName": "KindRepFun",
+            "fieldType": "KindRep",
+            "typeName": "KindRep",
+            "typeSrcLoc": "$ghc-prim$GHC.Types$KindRep"
+        },
+        {
+            "beautifiedCode": "KindRepFun $krep_a2pK",
+            "fieldName": "KindRepFun",
+            "fieldType": "KindRep",
+            "typeName": "KindRep",
+            "typeSrcLoc": "$ghc-prim$GHC.Types$KindRep"
+        },
+        {
+            "beautifiedCode": "KindRepTyConApp $tcMessage",
+            "fieldName": "KindRepTyConApp",
+            "fieldType": "KindRep",
+            "typeName": "TyCon",
+            "typeSrcLoc": "$ghc-prim$GHC.Types$TyCon"
+        },
+        {
+            "beautifiedCode": "KindRepFun $krep_a2pC",
+            "fieldName": "KindRepFun",
+            "fieldType": "KindRep",
+            "typeName": "KindRep",
+            "typeSrcLoc": "$ghc-prim$GHC.Types$KindRep"
+        }
+    ],
+    "$main$Haskell.Types$$sel:age:Person": [
+        {
+            "beautifiedCode": "ds_d2qm",
+            "fieldName": "Person",
+            "fieldType": "String",
+            "typeName": "Person",
+            "typeSrcLoc": "$main$Haskell.Types$Person"
+        },
+        {
+            "beautifiedCode": "ds_d2qn",
+            "fieldName": "Person",
+            "fieldType": "Int",
+            "typeName": "Person",
+            "typeSrcLoc": "$main$Haskell.Types$Person"
+        }
+    ],
+    "$main$Haskell.Types$$sel:code:Success": [
+        {
+            "beautifiedCode": "ds_d2qc",
+            "fieldName": "Failure",
+            "fieldType": "String",
+            "typeName": "Response",
+            "typeSrcLoc": "$main$Haskell.Types$Response"
+        },
+        {
+            "beautifiedCode": "ds_d2qd",
+            "fieldName": "Failure",
+            "fieldType": "Maybe Text",
+            "typeName": "Response",
+            "typeSrcLoc": "$main$Haskell.Types$Response"
+        }
+    ],
+    "$main$Haskell.Types$$sel:message:Success": [
+        {
+            "beautifiedCode": "ds_d2q0",
+            "fieldName": "Success",
+            "fieldType": "Maybe Text",
+            "typeName": "Response",
+            "typeSrcLoc": "$main$Haskell.Types$Response"
+        },
+        {
+            "beautifiedCode": "ds_d2q1",
+            "fieldName": "Success",
+            "fieldType": "a_a2lk",
+            "typeName": "Response",
+            "typeSrcLoc": "$main$Haskell.Types$Response"
+        },
+        {
+            "beautifiedCode": "ds_d2q2",
+            "fieldName": "Failure",
+            "fieldType": "String",
+            "typeName": "Response",
+            "typeSrcLoc": "$main$Haskell.Types$Response"
+        },
+        {
+            "beautifiedCode": "ds_d2q3",
+            "fieldName": "Failure",
+            "fieldType": "Maybe Text",
+            "typeName": "Response",
+            "typeSrcLoc": "$main$Haskell.Types$Response"
+        }
+    ],
+    "$main$Haskell.Types$$sel:name:Person": [
+        {
+            "beautifiedCode": "ds_d2qj",
+            "fieldName": "Person",
+            "fieldType": "String",
+            "typeName": "Person",
+            "typeSrcLoc": "$main$Haskell.Types$Person"
+        },
+        {
+            "beautifiedCode": "ds_d2qk",
+            "fieldName": "Person",
+            "fieldType": "Int",
+            "typeName": "Person",
+            "typeSrcLoc": "$main$Haskell.Types$Person"
+        }
+    ],
+    "$main$Haskell.Types$$sel:payload:Success": [
+        {
+            "beautifiedCode": "ds_d2q5",
+            "fieldName": "Success",
+            "fieldType": "Maybe Text",
+            "typeName": "Response",
+            "typeSrcLoc": "$main$Haskell.Types$Response"
+        },
+        {
+            "beautifiedCode": "ds_d2q6",
+            "fieldName": "Success",
+            "fieldType": "a_a2lm",
+            "typeName": "Response",
+            "typeSrcLoc": "$main$Haskell.Types$Response"
+        }
+    ]
+}

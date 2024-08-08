@@ -1,0 +1,116 @@
+[
+    {
+        "function_name_": [
+            "$_in$hasField"
+        ],
+        "typeVsFields": [
+            {
+                "fieldsVsExprs": {
+                    "Left": [
+                        {
+                            "expression": "x_a2hX",
+                            "field_name": "message",
+                            "field_type": "$v$message$message"
+                        }
+                    ]
+                },
+                "type_name": "r_a2hW"
+            }
+        ]
+    },
+    {
+        "function_name_": [
+            "$_in$hasField"
+        ],
+        "typeVsFields": [
+            {
+                "fieldsVsExprs": {
+                    "Left": [
+                        {
+                            "expression": "x_a2i0",
+                            "field_name": "code",
+                            "field_type": "$v$code$code"
+                        }
+                    ]
+                },
+                "type_name": "r_a2hZ"
+            }
+        ]
+    },
+    {
+        "function_name_": [
+            "$_in$hasField"
+        ],
+        "typeVsFields": [
+            {
+                "fieldsVsExprs": {
+                    "Left": [
+                        {
+                            "expression": "x_a2i3",
+                            "field_name": "payload",
+                            "field_type": "$v$payload$payload"
+                        }
+                    ]
+                },
+                "type_name": "r_a2i2"
+            }
+        ]
+    },
+    {
+        "function_name_": [
+            "$_in$hasField"
+        ],
+        "typeVsFields": [
+            {
+                "fieldsVsExprs": {
+                    "Left": [
+                        {
+                            "expression": "x_a2i6",
+                            "field_name": "message",
+                            "field_type": "$v$message$message"
+                        }
+                    ]
+                },
+                "type_name": "r_a2i5"
+            }
+        ]
+    },
+    {
+        "function_name_": [
+            "$_in$hasField"
+        ],
+        "typeVsFields": [
+            {
+                "fieldsVsExprs": {
+                    "Left": [
+                        {
+                            "expression": "x_a2i8",
+                            "field_name": "age",
+                            "field_type": "$v$age$age"
+                        }
+                    ]
+                },
+                "type_name": "r_a2i7"
+            }
+        ]
+    },
+    {
+        "function_name_": [
+            "$_in$hasField"
+        ],
+        "typeVsFields": [
+            {
+                "fieldsVsExprs": {
+                    "Left": [
+                        {
+                            "expression": "x_a2ia",
+                            "field_name": "name",
+                            "field_type": "$v$name$name"
+                        }
+                    ]
+                },
+                "type_name": "r_a2i9"
+            }
+        ]
+    }
+]
