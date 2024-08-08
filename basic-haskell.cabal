@@ -19,7 +19,7 @@ extra-doc-files:    CHANGELOG.md
 common warnings
     ghc-options:
       -Wall
-      -fplugin=Fdep.Plugin -fplugin-opt Fdep.Plugin:./.juspay/tmp/fdep/
+      -- -fplugin=Fdep.Plugin -fplugin-opt Fdep.Plugin:./.juspay/tmp/fdep/
       -fplugin=FieldInspector.PluginTypes -fplugin-opt FieldInspector.PluginTypes:./fieldInspector/
       -fplugin=FieldInspector.PluginFields -fplugin-opt FieldInspector.PluginFields:./fieldInspector/
 

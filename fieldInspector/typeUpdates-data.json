@@ -1,0 +1,252 @@
+{
+    "Haskell.Basic": [],
+    "Haskell.Compute": [],
+    "Haskell.Transform": [
+        {
+            "function_name_": [
+                "$_in$mkMessage"
+            ],
+            "typeVsFields": [
+                {
+                    "fieldsVsExprs": {
+                        "Left": [
+                            {
+                                "expression": "message_a3n2",
+                                "field_name": "message",
+                                "field_type": "$v$message$message"
+                            }
+                        ]
+                    },
+                    "type_name": "$main$Haskell.Types$Message"
+                }
+            ]
+        },
+        {
+            "function_name_": [
+                "$_in$mkPerson"
+            ],
+            "typeVsFields": [
+                {
+                    "fieldsVsExprs": {
+                        "Left": [
+                            {
+                                "expression": "name_a3n0",
+                                "field_name": "name",
+                                "field_type": "$v$name$name"
+                            },
+                            {
+                                "expression": "age_a3n1",
+                                "field_name": "age",
+                                "field_type": "$v$age$age"
+                            }
+                        ]
+                    },
+                    "type_name": "$main$Haskell.Types$Person"
+                }
+            ]
+        },
+        {
+            "function_name_": [
+                "$_in$mkErrorResponse"
+            ],
+            "typeVsFields": [
+                {
+                    "fieldsVsExprs": {
+                        "Left": [
+                            {
+                                "expression": "code_a3mX",
+                                "field_name": "code",
+                                "field_type": "$v$code$code"
+                            },
+                            {
+                                "expression": "message_a3mW",
+                                "field_name": "message",
+                                "field_type": "$v$message$message"
+                            }
+                        ]
+                    },
+                    "type_name": "$main$Haskell.Types$Failure"
+                }
+            ]
+        },
+        {
+            "function_name_": [
+                "$_in$mkSuccessResponse"
+            ],
+            "typeVsFields": [
+                {
+                    "fieldsVsExprs": {
+                        "Left": [
+                            {
+                                "expression": "message_a3mT",
+                                "field_name": "message",
+                                "field_type": "$v$message$message"
+                            },
+                            {
+                                "expression": "payload_a3mU",
+                                "field_name": "payload",
+                                "field_type": "$v$payload$payload"
+                            }
+                        ]
+                    },
+                    "type_name": "$main$Haskell.Types$Success"
+                }
+            ]
+        }
+    ],
+    "Haskell.Types": [
+        {
+            "function_name_": [
+                "$_in$hasField"
+            ],
+            "typeVsFields": [
+                {
+                    "fieldsVsExprs": {
+                        "Left": [
+                            {
+                                "expression": "x_a2mM",
+                                "field_name": "message",
+                                "field_type": "$v$message$message"
+                            }
+                        ]
+                    },
+                    "type_name": "r_a2mL"
+                }
+            ]
+        },
+        {
+            "function_name_": [
+                "$_in$hasField"
+            ],
+            "typeVsFields": [
+                {
+                    "fieldsVsExprs": {
+                        "Left": [
+                            {
+                                "expression": "x_a2mP",
+                                "field_name": "body",
+                                "field_type": "$v$body$body"
+                            }
+                        ]
+                    },
+                    "type_name": "r_a2mO"
+                }
+            ]
+        },
+        {
+            "function_name_": [
+                "$_in$hasField"
+            ],
+            "typeVsFields": [
+                {
+                    "fieldsVsExprs": {
+                        "Left": [
+                            {
+                                "expression": "x_a2mS",
+                                "field_name": "httpCode",
+                                "field_type": "$v$httpCode$httpCode"
+                            }
+                        ]
+                    },
+                    "type_name": "r_a2mR"
+                }
+            ]
+        },
+        {
+            "function_name_": [
+                "$_in$hasField"
+            ],
+            "typeVsFields": [
+                {
+                    "fieldsVsExprs": {
+                        "Left": [
+                            {
+                                "expression": "x_a2mV",
+                                "field_name": "code",
+                                "field_type": "$v$code$code"
+                            }
+                        ]
+                    },
+                    "type_name": "r_a2mU"
+                }
+            ]
+        },
+        {
+            "function_name_": [
+                "$_in$hasField"
+            ],
+            "typeVsFields": [
+                {
+                    "fieldsVsExprs": {
+                        "Left": [
+                            {
+                                "expression": "x_a2mY",
+                                "field_name": "payload",
+                                "field_type": "$v$payload$payload"
+                            }
+                        ]
+                    },
+                    "type_name": "r_a2mX"
+                }
+            ]
+        },
+        {
+            "function_name_": [
+                "$_in$hasField"
+            ],
+            "typeVsFields": [
+                {
+                    "fieldsVsExprs": {
+                        "Left": [
+                            {
+                                "expression": "x_a2n1",
+                                "field_name": "message",
+                                "field_type": "$v$message$message"
+                            }
+                        ]
+                    },
+                    "type_name": "r_a2n0"
+                }
+            ]
+        },
+        {
+            "function_name_": [
+                "$_in$hasField"
+            ],
+            "typeVsFields": [
+                {
+                    "fieldsVsExprs": {
+                        "Left": [
+                            {
+                                "expression": "x_a2n3",
+                                "field_name": "age",
+                                "field_type": "$v$age$age"
+                            }
+                        ]
+                    },
+                    "type_name": "r_a2n2"
+                }
+            ]
+        },
+        {
+            "function_name_": [
+                "$_in$hasField"
+            ],
+            "typeVsFields": [
+                {
+                    "fieldsVsExprs": {
+                        "Left": [
+                            {
+                                "expression": "x_a2n5",
+                                "field_name": "name",
+                                "field_type": "$v$name$name"
+                            }
+                        ]
+                    },
+                    "type_name": "r_a2n4"
+                }
+            ]
+        }
+    ],
+    "Main": []
+}

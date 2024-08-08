@@ -1,186 +1,186 @@
 {
     "$main$Haskell.Basic$listDrop": [
         {
-            "beautifiedCode": "ds_d1fN",
+            "beautifiedCode": "ds_d1dZ",
             "fieldName": "I#",
             "fieldType": "Int#",
             "typeName": "Int",
             "typeSrcLoc": "$ghc-prim$GHC.Types$Int"
         },
         {
-            "beautifiedCode": "ds_d1fO",
+            "beautifiedCode": "ds_d1e0",
             "fieldName": ":",
-            "fieldType": "a_a1bG",
+            "fieldType": "a_a19S",
             "typeName": "[]",
             "typeSrcLoc": "$ghc-prim$GHC.Types$[]"
         },
         {
-            "beautifiedCode": "xs_aQz",
+            "beautifiedCode": "xs_aOL",
             "fieldName": ":",
-            "fieldType": "[a_a1bG]",
+            "fieldType": "[a_a19S]",
             "typeName": "[]",
             "typeSrcLoc": "$ghc-prim$GHC.Types$[]"
         }
     ],
     "$main$Haskell.Basic$listFilter": [
         {
-            "beautifiedCode": "x_aQi",
+            "beautifiedCode": "x_aOu",
             "fieldName": ":",
-            "fieldType": "a_a1dk",
+            "fieldType": "a_a1bw",
             "typeName": "[]",
             "typeSrcLoc": "$ghc-prim$GHC.Types$[]"
         },
         {
-            "beautifiedCode": "xs_aQj",
+            "beautifiedCode": "xs_aOv",
             "fieldName": ":",
-            "fieldType": "[a_a1dk]",
+            "fieldType": "[a_a1bw]",
             "typeName": "[]",
             "typeSrcLoc": "$ghc-prim$GHC.Types$[]"
         },
         {
-            "beautifiedCode": "ds_d1gk x_aQi",
-            "fieldName": "ds_d1gk",
+            "beautifiedCode": "ds_d1ew x_aOu",
+            "fieldName": "ds_d1ew",
             "fieldType": "Bool",
-            "typeName": "a_a1dk",
+            "typeName": "a_a1bw",
             "typeSrcLoc": "$_in$a"
         }
     ],
     "$main$Haskell.Basic$listHead": [
         {
-            "beautifiedCode": "x_aQk",
+            "beautifiedCode": "x_aOw",
             "fieldName": ":",
-            "fieldType": "a_a1de",
+            "fieldType": "a_a1bq",
             "typeName": "[]",
             "typeSrcLoc": "$ghc-prim$GHC.Types$[]"
         },
         {
-            "beautifiedCode": "ds_d1gj",
+            "beautifiedCode": "ds_d1ev",
             "fieldName": ":",
-            "fieldType": "[a_a1de]",
+            "fieldType": "[a_a1bq]",
             "typeName": "[]",
             "typeSrcLoc": "$ghc-prim$GHC.Types$[]"
         }
     ],
     "$main$Haskell.Basic$listLast": [
         {
-            "beautifiedCode": "x_aQs",
+            "beautifiedCode": "x_aOE",
             "fieldName": ":",
-            "fieldType": "a_a1ca",
+            "fieldType": "a_a1am",
             "typeName": "[]",
             "typeSrcLoc": "$ghc-prim$GHC.Types$[]"
         },
         {
-            "beautifiedCode": "ds_d1g9",
+            "beautifiedCode": "ds_d1el",
             "fieldName": ":",
-            "fieldType": "[a_a1ca]",
+            "fieldType": "[a_a1am]",
             "typeName": "[]",
             "typeSrcLoc": "$ghc-prim$GHC.Types$[]"
         }
     ],
     "$main$Haskell.Basic$listLength": [
         {
-            "beautifiedCode": "ds_d1gQ",
+            "beautifiedCode": "ds_d1f2",
             "fieldName": ":",
-            "fieldType": "a_a1e3",
+            "fieldType": "a_a1cf",
             "typeName": "[]",
             "typeSrcLoc": "$ghc-prim$GHC.Types$[]"
         },
         {
-            "beautifiedCode": "xs_aCQ",
+            "beautifiedCode": "xs_aB2",
             "fieldName": ":",
-            "fieldType": "[a_a1e3]",
+            "fieldType": "[a_a1cf]",
             "typeName": "[]",
             "typeSrcLoc": "$ghc-prim$GHC.Types$[]"
         }
     ],
     "$main$Haskell.Basic$listMap": [
         {
-            "beautifiedCode": "x_aQf",
+            "beautifiedCode": "x_aOr",
             "fieldName": ":",
-            "fieldType": "a_a1ds",
+            "fieldType": "a_a1bE",
             "typeName": "[]",
             "typeSrcLoc": "$ghc-prim$GHC.Types$[]"
         },
         {
-            "beautifiedCode": "xs_aQg",
+            "beautifiedCode": "xs_aOs",
             "fieldName": ":",
-            "fieldType": "[a_a1ds]",
+            "fieldType": "[a_a1bE]",
             "typeName": "[]",
             "typeSrcLoc": "$ghc-prim$GHC.Types$[]"
         },
         {
-            "beautifiedCode": "ds_d1gw x_aQf",
-            "fieldName": "ds_d1gw",
-            "fieldType": "b_a1dt",
-            "typeName": "a_a1ds",
+            "beautifiedCode": "ds_d1eI x_aOr",
+            "fieldName": "ds_d1eI",
+            "fieldType": "b_a1bF",
+            "typeName": "a_a1bE",
             "typeSrcLoc": "$_in$a"
         }
     ],
     "$main$Haskell.Basic$listReverse": [
         {
-            "beautifiedCode": "x_aF6",
+            "beautifiedCode": "x_aDi",
             "fieldName": ":",
-            "fieldType": "a_a1dS",
+            "fieldType": "a_a1c4",
             "typeName": "[]",
             "typeSrcLoc": "$ghc-prim$GHC.Types$[]"
         },
         {
-            "beautifiedCode": "xs_aF7",
+            "beautifiedCode": "xs_aDj",
             "fieldName": ":",
-            "fieldType": "[a_a1dS]",
+            "fieldType": "[a_a1c4]",
             "typeName": "[]",
             "typeSrcLoc": "$ghc-prim$GHC.Types$[]"
         },
         {
-            "beautifiedCode": "c_d1gI x_aF6",
-            "fieldName": "c_d1gI",
-            "fieldType": "a_d1gH",
-            "typeName": "a_a1dS",
+            "beautifiedCode": "c_d1eU x_aDi",
+            "fieldName": "c_d1eU",
+            "fieldType": "a_d1eT",
+            "typeName": "a_a1c4",
             "typeSrcLoc": "$_in$a"
         }
     ],
     "$main$Haskell.Basic$listTail": [
         {
-            "beautifiedCode": "ds_d1gg",
+            "beautifiedCode": "ds_d1es",
             "fieldName": ":",
-            "fieldType": "a_a1d8",
+            "fieldType": "a_a1bk",
             "typeName": "[]",
             "typeSrcLoc": "$ghc-prim$GHC.Types$[]"
         },
         {
-            "beautifiedCode": "xs_aQr",
+            "beautifiedCode": "xs_aOD",
             "fieldName": ":",
-            "fieldType": "[a_a1d8]",
+            "fieldType": "[a_a1bk]",
             "typeName": "[]",
             "typeSrcLoc": "$ghc-prim$GHC.Types$[]"
         }
     ],
     "$main$Haskell.Basic$listTake": [
         {
-            "beautifiedCode": "ds_d1fZ",
+            "beautifiedCode": "ds_d1eb",
             "fieldName": "I#",
             "fieldType": "Int#",
             "typeName": "Int",
             "typeSrcLoc": "$ghc-prim$GHC.Types$Int"
         },
         {
-            "beautifiedCode": "x_aQv",
+            "beautifiedCode": "x_aOH",
             "fieldName": ":",
-            "fieldType": "a_a1bT",
+            "fieldType": "a_a1a5",
             "typeName": "[]",
             "typeSrcLoc": "$ghc-prim$GHC.Types$[]"
         },
         {
-            "beautifiedCode": "xs_aQw",
+            "beautifiedCode": "xs_aOI",
             "fieldName": ":",
-            "fieldType": "[a_a1bT]",
+            "fieldType": "[a_a1a5]",
             "typeName": "[]",
             "typeSrcLoc": "$ghc-prim$GHC.Types$[]"
         }
     ],
     "$main$Haskell.Basic$stringIsPalindrome": [
         {
-            "beautifiedCode": "stringReverse s_a172",
+            "beautifiedCode": "stringReverse s_a15e",
             "fieldName": "stringReverse",
             "fieldType": "String",
             "typeName": "String",

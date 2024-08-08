@@ -40,6 +40,20 @@
         "name": "Days",
         "typeKind": "data"
     },
+    "HttpResponse": {
+        "dataConstructors": [
+            {
+                "dataConNames": "HttpResponse",
+                "fields": {
+                    "body": "Response a",
+                    "httpCode": "String"
+                },
+                "sumTypes": []
+            }
+        ],
+        "name": "HttpResponse",
+        "typeKind": "data"
+    },
     "Message": {
         "dataConstructors": [
             {

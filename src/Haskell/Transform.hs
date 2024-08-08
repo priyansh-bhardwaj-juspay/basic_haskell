@@ -18,4 +18,16 @@ mkErrorResponse message code =
     }
 
 mkPersonResponse :: Maybe Text -> HT.Person -> HT.PersonResponse
-mkPersonResponse = mkSuccessResponse
+mkPersonResponse message person = mkSuccessResponse message person
+
+mkPerson :: String -> Int -> HT.Person
+mkPerson name age =
+  HT.Person
+    { name = name
+    , age = age
+    }
+
+mkMessage :: Text -> HT.Message
+mkMessage message = HT.Message
+  { message = message
+  }

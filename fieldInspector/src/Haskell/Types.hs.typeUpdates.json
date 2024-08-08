@@ -8,13 +8,13 @@
                 "fieldsVsExprs": {
                     "Left": [
                         {
-                            "expression": "x_a2hX",
+                            "expression": "x_a2mM",
                             "field_name": "message",
                             "field_type": "$v$message$message"
                         }
                     ]
                 },
-                "type_name": "r_a2hW"
+                "type_name": "r_a2mL"
             }
         ]
     },
@@ -27,13 +27,51 @@
                 "fieldsVsExprs": {
                     "Left": [
                         {
-                            "expression": "x_a2i0",
+                            "expression": "x_a2mP",
+                            "field_name": "body",
+                            "field_type": "$v$body$body"
+                        }
+                    ]
+                },
+                "type_name": "r_a2mO"
+            }
+        ]
+    },
+    {
+        "function_name_": [
+            "$_in$hasField"
+        ],
+        "typeVsFields": [
+            {
+                "fieldsVsExprs": {
+                    "Left": [
+                        {
+                            "expression": "x_a2mS",
+                            "field_name": "httpCode",
+                            "field_type": "$v$httpCode$httpCode"
+                        }
+                    ]
+                },
+                "type_name": "r_a2mR"
+            }
+        ]
+    },
+    {
+        "function_name_": [
+            "$_in$hasField"
+        ],
+        "typeVsFields": [
+            {
+                "fieldsVsExprs": {
+                    "Left": [
+                        {
+                            "expression": "x_a2mV",
                             "field_name": "code",
                             "field_type": "$v$code$code"
                         }
                     ]
                 },
-                "type_name": "r_a2hZ"
+                "type_name": "r_a2mU"
             }
         ]
     },
@@ -46,13 +84,13 @@
                 "fieldsVsExprs": {
                     "Left": [
                         {
-                            "expression": "x_a2i3",
+                            "expression": "x_a2mY",
                             "field_name": "payload",
                             "field_type": "$v$payload$payload"
                         }
                     ]
                 },
-                "type_name": "r_a2i2"
+                "type_name": "r_a2mX"
             }
         ]
     },
@@ -65,13 +103,13 @@
                 "fieldsVsExprs": {
                     "Left": [
                         {
-                            "expression": "x_a2i6",
+                            "expression": "x_a2n1",
                             "field_name": "message",
                             "field_type": "$v$message$message"
                         }
                     ]
                 },
-                "type_name": "r_a2i5"
+                "type_name": "r_a2n0"
             }
         ]
     },
@@ -84,13 +122,13 @@
                 "fieldsVsExprs": {
                     "Left": [
                         {
-                            "expression": "x_a2i8",
+                            "expression": "x_a2n3",
                             "field_name": "age",
                             "field_type": "$v$age$age"
                         }
                     ]
                 },
-                "type_name": "r_a2i7"
+                "type_name": "r_a2n2"
             }
         ]
     },
@@ -103,13 +141,13 @@
                 "fieldsVsExprs": {
                     "Left": [
                         {
-                            "expression": "x_a2ia",
+                            "expression": "x_a2n5",
                             "field_name": "name",
                             "field_type": "$v$name$name"
                         }
                     ]
                 },
-                "type_name": "r_a2i9"
+                "type_name": "r_a2n4"
             }
         ]
     }

@@ -19,4 +19,7 @@ main = do
   putStrLn "Hello, Haskell!"
   putStrLn (show length)
   putStrLn (show result)
+  let person = HT.mkPerson "Priyansh" 23
+      response = HT.mkSuccessResponse (Just "Success") person
+  print response
 

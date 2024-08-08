@@ -1,1 +1,11 @@
-{}
+{
+    "$main$Haskell.Transform$mkPerson": [
+        {
+            "beautifiedCode": "Person name_a3n0",
+            "fieldName": "Person",
+            "fieldType": "Person",
+            "typeName": "String",
+            "typeSrcLoc": "$base$GHC.Base$String"
+        }
+    ]
+}

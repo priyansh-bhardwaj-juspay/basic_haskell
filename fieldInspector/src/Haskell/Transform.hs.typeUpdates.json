@@ -1,6 +1,49 @@
 [
     {
         "function_name_": [
+            "$_in$mkMessage"
+        ],
+        "typeVsFields": [
+            {
+                "fieldsVsExprs": {
+                    "Left": [
+                        {
+                            "expression": "message_a3n2",
+                            "field_name": "message",
+                            "field_type": "$v$message$message"
+                        }
+                    ]
+                },
+                "type_name": "$main$Haskell.Types$Message"
+            }
+        ]
+    },
+    {
+        "function_name_": [
+            "$_in$mkPerson"
+        ],
+        "typeVsFields": [
+            {
+                "fieldsVsExprs": {
+                    "Left": [
+                        {
+                            "expression": "name_a3n0",
+                            "field_name": "name",
+                            "field_type": "$v$name$name"
+                        },
+                        {
+                            "expression": "age_a3n1",
+                            "field_name": "age",
+                            "field_type": "$v$age$age"
+                        }
+                    ]
+                },
+                "type_name": "$main$Haskell.Types$Person"
+            }
+        ]
+    },
+    {
+        "function_name_": [
             "$_in$mkErrorResponse"
         ],
         "typeVsFields": [
@@ -8,12 +51,12 @@
                 "fieldsVsExprs": {
                     "Left": [
                         {
-                            "expression": "code_a2HW",
+                            "expression": "code_a3mX",
                             "field_name": "code",
                             "field_type": "$v$code$code"
                         },
                         {
-                            "expression": "message_a2HV",
+                            "expression": "message_a3mW",
                             "field_name": "message",
                             "field_type": "$v$message$message"
                         }
@@ -32,12 +75,12 @@
                 "fieldsVsExprs": {
                     "Left": [
                         {
-                            "expression": "message_a2HS",
+                            "expression": "message_a3mT",
                             "field_name": "message",
                             "field_type": "$v$message$message"
                         },
                         {
-                            "expression": "payload_a2HT",
+                            "expression": "payload_a3mU",
                             "field_name": "payload",
                             "field_type": "$v$payload$payload"
                         }
