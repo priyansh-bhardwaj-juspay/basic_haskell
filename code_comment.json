@@ -1,0 +1,371 @@
+{
+    "Haskell.Basic->-listNull": {
+        "overview": "The function listNull takes a list as input and checks if the list is empty. If the list is empty, it returns True, otherwise it returns False. It's a simple function to determine whether a list is empty or not.",
+        "db_information": "This function does not involve any database calls.",
+        "types": {
+            "input": "List",
+            "input_type": "List of any type",
+            "output": "Boolean",
+            "output_type": "True or False"
+        },
+        "validations": "There are no specific validations imposed on the input list.",
+        "external_services": "There are no external service calls made within this function.",
+        "conditions": "The function has a single condition, which checks if the input list is empty or not, and returns True or False accordingly."
+    },
+    "Haskell.Basic->-listDrop": {
+        "overview": "The function 'listDrop' is a recursive function that takes an integer 'n' and a list 'xs' as input and returns a new list by dropping the first 'n' elements from the input list 'xs'. It uses pattern matching to handle the cases when 'n' is 0, when the input list is empty, and when 'n' is greater than 0 along with the list non-empty.",
+        "db_information": "This function does not involve any database calls.",
+        "types": {
+            "input": {
+                "n": "Integer",
+                "xs": "List"
+            },
+            "output": {
+                "result": "List"
+            }
+        },
+        "validations": "The input 'n' is validated through pattern matching in the function to check for the cases when 'n' is 0 or greater than 0, and the input list 'xs' is handled for the case when it's empty.",
+        "external_services": "There are no external service calls in this function.",
+        "conditions": "The function uses pattern matching to handle 3 conditions: when 'n' is 0, when the input list is empty, and when 'n' is greater than 0 along with the list non-empty to cover all possible scenarios for dropping elements from the list."
+    },
+    "Haskell.Basic->-listTake": {
+        "overview": "The function 'listTake' takes an integer 'n' and a list 'xs' as input and returns a new list containing the first 'n' elements of the input list. It uses recursion to iterate through the input list and construct the new list of 'n' elements.",
+        "db_information": "No database calls are made in this function.",
+        "types": {
+            "input": {
+                "n": "Integer",
+                "xs": "List"
+            },
+            "output": "List"
+        },
+        "validations": {
+            "input": {
+                "n": "The input integer 'n' should be a non-negative integer."
+            },
+            "output": "The output list will be empty if 'n' is 0 or if the input list 'xs' is empty."
+        },
+        "external_services": "No external service calls are needed for this function.",
+        "conditions": "The function uses pattern matching to handle different cases based on the value of 'n' and the input list 'xs'. The recursive call reduces the value of 'n' until 'n' becomes 0 or the input list becomes empty."
+    },
+    "Haskell.Basic->-listLast": {
+        "overview": "This function 'listLast' is used to find the last element of a list. It uses pattern matching to handle different cases of non-empty and empty lists. When the list has only one element, it returns the element itself. If the list has more than one element, it recursively calls the 'listLast' function with the remaining elements. If the list is empty, it throws an error as 'empty list'.",
+        "db_information": "This function does not involve any database calls.",
+        "types": {
+            "input": "List of any type",
+            "output": "Element of the input list",
+            "input_type": "List",
+            "output_type": "Any"
+        },
+        "validations": {
+            "input": "No specific validations are imposed on the input list as it can be of any type. However, the validation for empty list is handled by throwing an error."
+        },
+        "external_services": {
+            "usage": "There are no external service calls within this function as it operates only on the input list provided."
+        },
+        "conditions": {
+            "decision_making": "The function uses pattern matching to make decisions based on the structure of the input list. It checks for non-empty list, empty list and single element list to determine the behavior."
+        }
+    },
+    "Haskell.Basic->-listTail": {
+        "overview": "The function listTail takes a list as input and returns the tail of the list, i.e., all elements except the first one. It handles both non-empty and empty list cases by pattern matching. If an empty list is passed as input, it raises an error.",
+        "db_information": "No database operations are being performed in this function.",
+        "types": {
+            "input": "List of any type",
+            "output": "List of the same type as the input"
+        },
+        "validations": "The function checks for the case of an empty list and raises an error in that scenario.",
+        "external_services": "There are no external service calls in this function.",
+        "conditions": "The function uses pattern matching to check if the input list is empty or not, and handles both cases accordingly."
+    },
+    "Haskell.Basic->-listHead": {
+        "overview": "The function 'listHead' is used to extract the head element of a list. It takes a list as input and returns the first element of the list if it is non-empty, otherwise it throws an error indicating that the list is empty.",
+        "db_information": "No database calls are being made in this function.",
+        "types": {
+            "input": "List",
+            "input_type": "List of any type",
+            "output": "Element",
+            "output_type": "Same type as the elements of the input list"
+        },
+        "validations": {
+            "input": "Validation checks if the input list is empty or not to avoid errors."
+        },
+        "external_services": {
+            "usage": "No external service calls are made in this function."
+        },
+        "conditions": "The function employs pattern matching to check if the input list is empty or not. If the list is non-empty, the head element is returned. If the list is empty, it raises an error to handle the empty list case."
+    },
+    "Haskell.Basic->-listFilter": {
+        "overview": "The function 'listFilter' takes a predicate function 'p' and a list 'xs' as input, and filters the elements of the list based on the predicate function. It applies the predicate function to each element of the list and returns a new list containing only those elements for which the predicate returns true.",
+        "db_information": "The function does not contain any database calls.",
+        "types": {
+            "input": {
+                "p": "function",
+                "xs": "list"
+            },
+            "output": "list"
+        },
+        "validations": "The function assumes that the predicate function 'p' and the input list 'xs' are of appropriate types and that the predicate function returns a boolean value.",
+        "external_services": "There are no external service calls in this function.",
+        "conditions": "The function uses pattern matching and conditional statements to apply the predicate function to each element of the input list and filter the elements based on the result of the predicate."
+    },
+    "Haskell.Basic->-listMap": {
+        "overview": "This function 'listMap' takes a function 'f' and a list of elements as input and applies the function 'f' to each element of the list, returning a new list with the results. It uses recursion to apply the function to each element of the list.",
+        "db_information": "There are no database calls in this function.",
+        "types": {
+            "input": "A function 'f' and a list of elements",
+            "output": "A new list of elements"
+        },
+        "validations": "No specific validations are imposed on the input or output types.",
+        "external_services": {
+            "No external service calls are made in the function.": "The function operates only on the input provided and does not interact with any external services."
+        },
+        "conditions": "The function uses recursion to traverse the input list and apply the function 'f' to each element. It handles the base case of an empty list by returning an empty list, and the recursive case where it applies 'f' to the head of the list and then recurses on the tail of the list."
+    },
+    "Haskell.Basic->-listConcat": {
+        "overview": "This function 'listConcat' concatenates two lists 'xs' and 'ys' using the 'foldr' function. It iterates through the first list 'xs' and appends each element to the second list 'ys' using the cons operator ':' to create a single concatenated list.",
+        "db_information": {
+            "calls": [],
+            "purpose": "There are no database calls in this function as it operates solely on in-memory lists."
+        },
+        "types": {
+            "input": "two lists 'xs' and 'ys'",
+            "input_types": "lists",
+            "output": "a single concatenated list",
+            "output_types": "list"
+        },
+        "validations": "There are no specific validations as this function operates on generic lists and does not impose any constraints on the input or output data.",
+        "external_services": {
+            "calls": [],
+            "purpose": "No external service calls are made as the function only manipulates the given lists internally."
+        },
+        "conditions": "The function does not contain any explicit conditional statements as it directly applies the fold operation to concatenate the lists."
+    },
+    "Haskell.Basic->-stringConcat": {
+        "overview": "The function `stringConcat` is an alias for the function `listConcat`. It means `stringConcat` is referring to the implementation of `listConcat`. This can be helpful for code readability and maintenance.",
+        "db_information": {},
+        "types": {
+            "input": "N/A",
+            "output": "N/A"
+        },
+        "validations": {},
+        "external_services": {},
+        "conditions": {}
+    },
+    "Haskell.Basic->-listReverse": {
+        "overview": "This function 'listReverse' takes a list as input and recursively reverses the elements in the list. It uses pattern matching to handle the base case of an empty list, and for non-empty lists, it recursively reverses the tail of the list and appends the head element at the end. This approach effectively reverses the input list.",
+        "db_information": "This function does not involve any database calls.",
+        "types": {
+            "input": "List of elements",
+            "output": "Reversed list of elements"
+        },
+        "validations": "No specific validations are needed as the function handles both empty and non-empty lists.",
+        "external_services": "There are no external service calls involved in this function.",
+        "conditions": "The function uses pattern matching to differentiate between the base case of an empty list and the recursive case of a non-empty list. This helps in defining the logic for reversing the list."
+    },
+    "Haskell.Basic->-stringReverse": {
+        "overview": "The function stringReverse takes an input string and passes it to the helper function listReverse. The purpose of this function is to reverse the input string using the listReverse helper function.",
+        "db_information": {},
+        "types": {
+            "input": "String",
+            "output": "String"
+        },
+        "validations": {},
+        "external_services": {},
+        "conditions": {}
+    },
+    "Haskell.Basic->-listLength": {
+        "overview": "This function 'listLength' calculates the length of a given list recursively. It takes an input list and recursively counts the number of elements in the list until the base case where the list is empty. It then returns the count of elements in the list.",
+        "db_information": "No database calls are happening in this function.",
+        "types": {
+            "input": "List",
+            "input_type": "Any",
+            "output": "Length of the List",
+            "output_type": "Integer"
+        },
+        "validations": {
+            "input": "The function does not have any specific input validations as it accepts any type of list.",
+            "output": "The output is validated as it returns the length of the list as an Integer."
+        },
+        "external_services": {
+            "description": "No external service calls are needed for this function as it only performs operations on the input list internally."
+        },
+        "conditions": {
+            "decision_making": "The function uses pattern matching to handle two cases: an empty list and a non-empty list. It decides the flow of the function based on these two cases, using recursion to count the length of the list."
+        }
+    },
+    "Haskell.Compute->-gcdd": {
+        "overview": "This function calculates the greatest common divisor (GCD) of two numbers using the Euclidean algorithm. It repeatedly applies the formula GCD(a, b) = GCD(b, a mod b) until the second number becomes zero, at which point the first number will be the GCD.",
+        "db_information": "No database calls are involved in this function.",
+        "types": {
+            "input": "Two integers 'a' and 'b' for which the GCD needs to be calculated",
+            "output": "An integer which is the GCD of the input numbers"
+        },
+        "validations": {
+            "input": "The input numbers 'a' and 'b' should be integers"
+        },
+        "external_services": "No external service calls are made as part of this function.",
+        "conditions": "The function uses pattern matching to handle two cases: when the second number 'b' is 0, the GCD is 'a'; otherwise, it recursively calls itself with 'b' and 'a mod b'. This decision-making helps in repeatedly applying the Euclidean algorithm until the GCD is found."
+    },
+    "Haskell.Compute->-factorial": {
+        "overview": "The function 'factorial' computes the factorial of a given number using recursion. It multiplies the input number with the factorial of (input number - 1) until the base case is reached.",
+        "db_information": "No database calls are involved in this function.",
+        "types": {
+            "input": "n: Integer (input number for which factorial is to be computed)",
+            "output": "Integer (factorial of the input number)"
+        },
+        "validations": {
+            "input": "No specific validations are imposed as the function uses integer type for input which can handle non-negative numbers"
+        },
+        "external_services": {
+            "No_external_service_calls": "This function does not involve any external service calls."
+        },
+        "conditions": {
+            "recursion_base_case": "The function uses recursion to multiply the input number with the factorial of (input number - 1) until the base case n = 0 is reached, where it returns 1."
+        }
+    },
+    "Haskell.Compute->-power": {
+        "overview": "The function 'power' calculates the power of 'a' raised to the exponent 'b' using the '^' operator. It takes two inputs 'a' and 'b' and returns the result of 'a' raised to the power of 'b'. The business logic involves performing the exponentiation operation using the provided inputs.",
+        "db_information": {},
+        "types": {
+            "input": "a: Numeric, b: Numeric",
+            "output": "Numeric"
+        },
+        "validations": {},
+        "external_services": {},
+        "conditions": {}
+    },
+    "Haskell.Compute->-modulus": {
+        "overview": "The function 'modulus' takes two parameters 'a' and 'b' and returns the remainder of 'a' divided by 'b'. It uses the built-in 'mod' operator to perform the modulo operation.",
+        "db_information": "No database calls are involved in this function.",
+        "types": {
+            "input": "Two integer parameters 'a' and 'b'.",
+            "output": "An integer which is the remainder of 'a' divided by 'b'."
+        },
+        "validations": "The function assumes that the input parameters 'a' and 'b' will be integers, as there are no explicit validations for this in the code. Therefore, it is important to ensure that only integers are passed as input.",
+        "external_services": "No external service calls are made by this function.",
+        "conditions": "There are no conditional statements present in the function."
+    },
+    "Haskell.Compute->-div": {
+        "overview": "The function 'div' calculates the division of two numbers 'a' and 'b'. It takes two input parameters 'a' and 'b' and returns the result of the division.",
+        "db_information": "No database calls are happening within this function.",
+        "types": {
+            "input": "a (number), b (number)",
+            "output": "Division result (number)"
+        },
+        "validations": "No specific validations are imposed on the input types.",
+        "external_services": "No external service calls are needed for this function.",
+        "conditions": "There are no explicit conditional statements in the function."
+    },
+    "Haskell.Compute->-mul": {
+        "overview": "The function 'mul' takes two input parameters 'a' and 'b' and returns their product. It simply multiplies the two input numbers together to produce the result.",
+        "db_information": "No database calls are happening in this function.",
+        "types": {
+            "input": "a: number, b: number",
+            "output": "number"
+        },
+        "validations": "There are no specific validations imposed on the input types or output type.",
+        "external_services": "There are no external service calls happening in this function.",
+        "conditions": "No decision-making statements or conditions are present in the function."
+    },
+    "Haskell.Compute->-sub": {
+        "overview": "The function named 'sub' subtracts the value of 'b' from 'a' and returns the result. It takes two integer parameters as input and subtracts the second parameter from the first one.",
+        "db_information": "This function does not involve any database calls.",
+        "types": {
+            "input": "Two integer parameters 'a' and 'b'",
+            "output": "An integer, which is the result of subtracting 'b' from 'a'"
+        },
+        "validations": "The function assumes that the input parameters are integers and does not perform any explicit validation for the input and output types.",
+        "external_services": "There are no external service calls required for this function.",
+        "conditions": "There are no conditions or decision-making statements in this function as it simply performs subtraction operation on the input parameters."
+    },
+    "Haskell.Compute->-add": {
+        "overview": "The function 'add' takes two input parameters 'a' and 'b', and returns the sum of these two parameters. It performs a simple addition operation on the input parameters and returns the result.",
+        "db_information": {},
+        "types": {
+            "input": "two parameters 'a' and 'b' of numeric type",
+            "output": "numeric type (sum of 'a' and 'b')"
+        },
+        "validations": {},
+        "external_services": {},
+        "conditions": {}
+    },
+    "Main->-main": {
+        "overview": "The main function is a Haskell program that performs the following tasks: calculates the length of a list, performs addition of two numbers, and prints the result. It uses helper functions to calculate the length of the list and add two numbers.",
+        "db_information": "This function does not involve any database calls.",
+        "types": {
+            "input": "None",
+            "input types": "None",
+            "output": "Printed output to the console",
+            "output types": "Integer, String"
+        },
+        "validations": "No specific validation rules are applied to the input parameters or output.",
+        "external_services": "This function does not make any external service calls.",
+        "conditions": "There are no conditional statements in this function, as it performs a series of predetermined actions."
+    },
+    "Haskell.Basic->-stringToLowerCase": {
+        "overview": "The function stringToLowerCase takes a string as input and returns the same string with all characters converted to lower case using the map function along with a custom toLower function.",
+        "db_information": "There are no DB calls in this function.",
+        "types": {
+            "input": "String",
+            "output": "String"
+        },
+        "validations": "No specific validations are imposed on the input types as the function accepts any string input.",
+        "external_services": "No external service calls are involved in this function.",
+        "conditions": "The custom toLower function checks if the character is an uppercase letter and if so, converts it to lowercase using ASCII value manipulation."
+    },
+    "Haskell.Basic->-stringToUpperCase": {
+        "overview": "The function stringToUpperCase takes a string as input and transforms each character to its uppercase form using the map function and a helper function toUpper. The toUpper helper function checks if a character is lowercase and converts it to its uppercase equivalent.",
+        "db_information": "No database calls are being made in this function.",
+        "types": {
+            "input": "String",
+            "output": "String"
+        },
+        "validations": "No specific input or output validations are imposed in the function.",
+        "external_services": "There are no external service calls happening within this function.",
+        "conditions": "The toUpper helper function checks if a character is in the range of lowercase alphabets and converts it to its uppercase equivalent using the toEnum and fromEnum functions, otherwise it leaves the character unchanged."
+    },
+    "Haskell.Basic->-stringIsPalindrome": {
+        "overview": "The stringIsPalindrome function takes a string as input and compares it with its reverse using the stringReverse helper function. If the input string is equal to its reverse, then it is considered a palindrome.",
+        "db_information": {},
+        "types": {
+            "input": "String",
+            "output": "Boolean"
+        },
+        "validations": {},
+        "external_services": {},
+        "conditions": {}
+    },
+    "Haskell.Transform->-mkErrorResponse": {
+        "overview": "The function mkErrorResponse takes in a message and a code as input and constructs a failure response with the provided message and code. This failure response is structured using the Failure data type from the HT module.",
+        "db_information": "This function does not involve any database calls.",
+        "types": {
+            "input": "message (String), code (Int)",
+            "output": "Failure Response (HT.Failure)"
+        },
+        "validations": "No specific validations are applied to the input as it simply constructs a failure response using the provided message and code.",
+        "external_services": "The function does not involve any external service calls.",
+        "conditions": "There are no conditional statements used in this function as it simply constructs the failure response without any decision-making logic."
+    },
+    "Haskell.Transform->-mkSuccessResponse": {
+        "overview": "The function mkSuccessResponse takes in a message and a payload, and returns a success response using the record constructor for the Success type. It constructs a success response object with the provided message and payload.",
+        "db_information": "",
+        "types": {
+            "input": "message: String, payload: a",
+            "output": "Success {message: String, payload: a}"
+        },
+        "validations": "",
+        "external_services": "",
+        "conditions": "There are no conditions or decision-making statements in this function."
+    },
+    "Haskell.Transform->-mkPersonResponse": {
+        "overview": "The purpose of the mkPersonResponse function is to create a success response for a person. It is a simple alias for the mkSuccessResponse function, which is used to construct a success response for any type of data.",
+        "db_information": "There are no db calls happening within this function.",
+        "types": {
+            "input": "None",
+            "output": "SuccessResponse"
+        },
+        "validations": "No specific input or output validations are imposed for this function.",
+        "external_services": "There are no external service calls happening within this function.",
+        "conditions": "There are no conditional statements or decision making involved in this function."
+    }
+}

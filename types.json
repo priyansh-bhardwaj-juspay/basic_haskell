@@ -1,0 +1,51 @@
+{
+    "Haskell.Basic": {},
+    "Haskell.Compute": {},
+    "Haskell.Transform": {
+        "TcpResponse": {
+            "module": "Haskell.Transform",
+            "name": "TcpResponse",
+            "src_loc": "src/Haskell/Transform:45:1",
+            "stringified_code": "data TcpResponse a = HttpResponse{httpCode :: String,\n                                  body :: HT.Response a}"
+        }
+    },
+    "Haskell.Types": {
+        "Days": {
+            "module": "Haskell.Types",
+            "name": "Days",
+            "src_loc": "src/Haskell/Types:11:1",
+            "stringified_code": "data Days = Monday\n          | Tuesday\n          | Wednesday\n          | Thursday\n          | Friday\n          | Saturday\n          | Sunday"
+        },
+        "HttpResponse": {
+            "module": "Haskell.Types",
+            "name": "HttpResponse",
+            "src_loc": "src/Haskell/Types:23:1",
+            "stringified_code": "data HttpResponse a = HttpResponse{httpCode :: String,\n                                   body :: Response a}"
+        },
+        "Message": {
+            "module": "Haskell.Types",
+            "name": "Message",
+            "src_loc": "src/Haskell/Types:30:1",
+            "stringified_code": "newtype Message = Message{message :: Text}"
+        },
+        "Person": {
+            "module": "Haskell.Types",
+            "name": "Person",
+            "src_loc": "src/Haskell/Types:5:1",
+            "stringified_code": "data Person = Person{name :: String, age :: Int}\n                deriving Show"
+        },
+        "PersonResponse": {
+            "module": "Haskell.Types",
+            "name": "PersonResponse",
+            "src_loc": "src/Haskell/Types:28:1",
+            "stringified_code": "type PersonResponse = Response Person"
+        },
+        "Response": {
+            "module": "Haskell.Types",
+            "name": "Response",
+            "src_loc": "src/Haskell/Types:13:1",
+            "stringified_code": "data Response a = Success{message :: Maybe Text, payload :: a}\n                | Failure{code :: String, message :: Maybe Text}\n                    deriving Show"
+        }
+    },
+    "Main": {}
+}

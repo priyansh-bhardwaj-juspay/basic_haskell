@@ -1,0 +1,264 @@
+{
+    "dependencies": [],
+    "package": {
+        "crate::haskell::types": {
+            "imports": [],
+            "content": [
+                {
+                    "type": "type",
+                    "code": "pub enum Response<A> {\n    Success { message: Option<Text>, payload: A },\n    Failure { code: String, message: Option<Text> },\n}\nimpl<A> Response<A> {\n    pub fn new_success(message: Option<Text>, payload: A) -> Self {\n        Response::Success { message, payload }\n    }\n    pub fn new_failure(code: String, message: Option<Text>) -> Self {\n        Response::Failure { code, message }\n    }\n}",
+                    "line": 13,
+                    "name": "Response"
+                },
+                {
+                    "type": "type",
+                    "code": "pub enum Days {\n    Monday,\n    Tuesday,\n    Wednesday,\n    Thursday,\n    Friday,\n    Saturday,\n    Sunday\n}",
+                    "line": 11,
+                    "name": "Days"
+                },
+                {
+                    "type": "type",
+                    "code": "pub struct HttpResponse<A> {\n    pub http_code: String,\n    pub body: Response<A>\n}",
+                    "line": 23,
+                    "name": "HttpResponse"
+                },
+                {
+                    "type": "type",
+                    "code": "pub struct Message {\n    message: String\n}",
+                    "line": 30,
+                    "name": "Message"
+                },
+                {
+                    "type": "type",
+                    "code": "pub struct Person {\n    pub name: String,\n    pub age: i32,\n}\n",
+                    "line": 5,
+                    "name": "Person"
+                },
+                {
+                    "type": "type",
+                    "code": "pub type PersonResponse = Response<Person>;",
+                    "line": 28,
+                    "name": "PersonResponse"
+                }
+            ]
+        },
+        "crate::haskell::transform": {
+            "imports": [
+                "",
+                "use crate::haskell::types::Response as HTResponse;",
+                "use crate::haskell::transform::module::SuccessResponse;",
+                "use crate::haskell::transform as HT;",
+                "use crate::haskell::types::Response;"
+            ],
+            "content": [
+                {
+                    "type": "type",
+                    "code": "pub struct TcpResponse<A> {\n    pub http_code: String,\n    pub body: Response<A>,\n}",
+                    "line": 45,
+                    "name": "TcpResponse"
+                },
+                {
+                    "type": "function",
+                    "code": "pub fn mk_error_response(message: String, code: i32) -> crate::haskell::types::Response<String> {\n    crate::haskell::types::Response::Failure(code.to_string(), Some(message))\n}",
+                    "line": 14,
+                    "name": "mk_error_response"
+                },
+                {
+                    "type": "function",
+                    "code": "pub fn mk_success_response<A>(message: String, payload: A) -> Response<A> {\n    Response::new_success(Some(message), payload)\n}",
+                    "line": 7,
+                    "name": "mk_success_response"
+                },
+                {
+                    "type": "function",
+                    "code": "use crate::module::SuccessResponse;",
+                    "line": 21,
+                    "name": "mk_person_response"
+                }
+            ]
+        },
+        "crate::main": {
+            "imports": [],
+            "content": [
+                {
+                    "type": "function",
+                    "code": "fn add_numbers(a: i32, b: i32) -> i32 {\n    a + b\n}\n\nfn calculate_length(list: &Vec<i32>) -> usize {\n    list.len()\n}\n\nfn main() {\n    let list = vec![1, 3, 5, 7, 9];\n    let sum = add_numbers(2, 3);\n    let length = calculate_length(&list);\n    println!(\"Sum: {}\", sum);\n    println!(\"Length of list: {}\", length);\n}",
+                    "line": 13,
+                    "name": "main"
+                }
+            ]
+        },
+        "crate::haskell::basic": {
+            "imports": [
+                "",
+                "use std::clone::Clone;",
+                "use std::char;",
+                "use std::mem as other_mem;",
+                "use std::result;",
+                "use crate::haskell::basic::list::List;",
+                "use std::result::Result;",
+                "use crate::haskell::List;",
+                "use crate::List;",
+                "use std::clone::Clone as _alias;",
+                "use std::ascii::AsciiExt;",
+                "use std::clone::Clone as _;",
+                "use std::mem;",
+                "use std::clone::Clone as CloneTrait;"
+            ],
+            "content": [
+                {
+                    "type": "function",
+                    "code": "fn string_to_lower_case(input: String) -> String {\n    input.chars().flat_map(|c| c.to_lowercase()).collect()\n}",
+                    "line": 97,
+                    "name": "string_to_lower_case"
+                },
+                {
+                    "type": "function",
+                    "code": "fn string_to_upper_case(input: String) -> String {\n    let result: String = input.chars().map(|c| c.to_ascii_uppercase()).collect();\n    result\n}",
+                    "line": 87,
+                    "name": "string_to_upper_case"
+                },
+                {
+                    "type": "function",
+                    "code": "pub fn list_null<T>(input: &Vec<T>) -> bool {\n    input.is_empty()\n}",
+                    "line": 80,
+                    "name": "list_null"
+                },
+                {
+                    "type": "function",
+                    "code": "pub fn list_drop<T>(n: usize, mut xs: Vec<T>) -> Vec<T> {\n    match n {\n        0 => xs,\n        _ => match xs.len() {\n            0 => vec![],\n            _ => list_drop(n-1, xs.split_off(1)),\n        },\n    }\n}",
+                    "line": 73,
+                    "name": "list_drop"
+                },
+                {
+                    "type": "function",
+                    "code": "pub fn list_take<T: std::clone::Clone>(n: usize, xs: Vec<T>) -> Vec<T> {\n    match (n, xs.as_slice()) {\n        (0, _) | (_, &[]) => Vec::new(),\n        (n, [x, xs @ ..]) => {\n            let mut res = list_take(n - 1, xs.to_vec());\n            res.insert(0, x.clone());\n            res\n        }\n    }\n}",
+                    "line": 64,
+                    "name": "list_take"
+                },
+                {
+                    "type": "function",
+                    "code": "fn list_last<'a, T: Clone>(input: &'a [T]) -> Result<T, &'static str> {\n    match input {\n        [last] => Ok(last.clone()),\n        [] => Err(\"empty list\"),\n        [_, tail @ ..] => list_last(tail),\n    }\n}",
+                    "line": 57,
+                    "name": "list_last"
+                },
+                {
+                    "type": "function",
+                    "code": "pub fn list_tail<T: std::clone::Clone>(input_list: Vec<T>) -> Result<Vec<T>, String> {\n    match input_list.len() {\n        0 => Err(String::from(\"Empty list\")),\n        _ => Ok(input_list[1..].to_vec()),\n    }\n}",
+                    "line": 51,
+                    "name": "list_tail"
+                },
+                {
+                    "type": "function",
+                    "code": "pub fn list_head<T: Clone>(input_list: Vec<T>) -> Result<T, String> {\n    match input_list.first() {\n        Some(head) => Ok(head.clone()),\n        None => Err(String::from(\"The list is empty\")),\n    }\n}",
+                    "line": 44,
+                    "name": "list_head"
+                },
+                {
+                    "type": "function",
+                    "code": "pub fn list_filter<T>(p: impl Fn(&T) -> bool, xs: Vec<T>) -> Vec<T> {\n    xs.into_iter().filter(|x| p(&x)).collect()\n}",
+                    "line": 36,
+                    "name": "list_filter"
+                },
+                {
+                    "type": "function",
+                    "code": "pub fn list_map<F, T, R>(f: F, list: Vec<T>) -> Vec<R> \n    where \n        F: Fn(&T) -> R,\n    { \n        match list.split_first() { \n            None => vec![], \n            Some((head, tail)) => { \n                let result = f(head); \n                let mut mapped_tail = list_map(f, tail.to_vec()); \n                mapped_tail.insert(0, result); \n                mapped_tail \n            } \n        } \n    }",
+                    "line": 29,
+                    "name": "list_map"
+                },
+                {
+                    "type": "function",
+                    "code": "pub fn list_concat<T: Clone>(xs: Vec<T>, ys: Vec<T>) -> Vec<T> { xs.into_iter().fold(ys, |mut acc, x| { acc.push(x.clone()); acc }) }",
+                    "line": 22,
+                    "name": "list_concat"
+                },
+                {
+                    "type": "function",
+                    "code": "pub fn string_concat<T: ToString + Clone>(xs: Vec<T>, ys: Vec<T>) -> Vec<T> \n{ \n    crate::haskell::basic::list_concat::<T>(xs, ys) \n}",
+                    "line": 112,
+                    "name": "string_concat"
+                },
+                {
+                    "type": "function",
+                    "code": "pub fn list_reverse<T: Clone>(input_list: Vec<T>) -> Vec<T> {\n    match input_list.as_slice() {\n        [] => vec![],\n        [head, tail @ ..] => {\n            let mut reversed_tail = list_reverse::<T>(tail.to_vec());\n            reversed_tail.push(head.clone());\n            reversed_tail\n        }\n    }\n}",
+                    "line": 14,
+                    "name": "list_reverse"
+                },
+                {
+                    "type": "function",
+                    "code": "pub fn string_reverse(input: String) -> String {\n    crate::haskell::basic::list_reverse(input).into_iter().collect()\n}",
+                    "line": 106,
+                    "name": "string_reverse"
+                },
+                {
+                    "type": "function",
+                    "code": "pub fn string_is_palindrome(input: &str) -> bool {\n    let reversed = crate::haskell::basic::string_reverse(input.to_string());\n    input == reversed\n}",
+                    "line": 119,
+                    "name": "string_is_palindrome"
+                },
+                {
+                    "type": "function",
+                    "code": "use crate::list::List;\npub fn list_length<T>(input_list: &List<T>) -> i32 {\n    match input_list {\n        List::Nil => 0,\n        List::Cons(_, tail) => 1 + list_length(tail),\n    }\n}",
+                    "line": 7,
+                    "name": "list_length"
+                }
+            ]
+        },
+        "crate::haskell::compute": {
+            "imports": [
+                "use std::ops::Add;",
+                "use std::fmt::Debug;"
+            ],
+            "content": [
+                {
+                    "type": "function",
+                    "code": "pub fn gcd(a: i32, b: i32) -> i32 {\n    match b {\n        0 => a,\n        _ => gcd(b, a % b),\n    }\n}",
+                    "line": 47,
+                    "name": "gcdd"
+                },
+                {
+                    "type": "function",
+                    "code": "pub fn factorial(n: u64) -> u64 {\n    if n == 0 {\n        1\n    } else {\n        n * factorial(n - 1)\n    }\n}",
+                    "line": 39,
+                    "name": "factorial"
+                },
+                {
+                    "type": "function",
+                    "code": "pub fn power(a: f64, b: f64) -> f64 {\n    a.powf(b)\n}",
+                    "line": 32,
+                    "name": "power"
+                },
+                {
+                    "type": "function",
+                    "code": "pub fn modulus(a: i32, b: i32) -> i32 {\n    a % b\n}",
+                    "line": 27,
+                    "name": "modulus"
+                },
+                {
+                    "type": "function",
+                    "code": "pub fn div(a: f64, b: f64) -> f64 {\n    a / b\n}",
+                    "line": 21,
+                    "name": "div"
+                },
+                {
+                    "type": "function",
+                    "code": "pub fn mul(a: f64, b: f64) -> f64 {\n    a * b\n}",
+                    "line": 16,
+                    "name": "mul"
+                },
+                {
+                    "type": "function",
+                    "code": "pub fn sub(a: i32, b: i32) -> i32 {\n    a - b\n}",
+                    "line": 11,
+                    "name": "sub"
+                },
+                {
+                    "type": "function",
+                    "code": "pub fn add<T>(a: T, b: T) -> T\nwhere T: std::ops::Add<Output = T> + Copy + std::fmt::Debug\n{\n    a + b\n}",
+                    "line": 5,
+                    "name": "add"
+                }
+            ]
+        }
+    }
+}

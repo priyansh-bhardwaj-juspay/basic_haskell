@@ -1,0 +1,76 @@
+{
+    "Haskell.Transform": {
+        "TcpResponse": [
+            {
+                "module": "Haskell.Types",
+                "name": "Response"
+            }
+        ],
+        "mkErrorResponse": [
+            {
+                "module": "Haskell.Types",
+                "name": "Response"
+            }
+        ],
+        "mkMessage": [
+            {
+                "module": "Haskell.Types",
+                "name": "Message"
+            }
+        ],
+        "mkPerson": [
+            {
+                "module": "Haskell.Types",
+                "name": "Person"
+            }
+        ],
+        "mkPersonResponse": [
+            {
+                "module": "Haskell.Types",
+                "name": "Person"
+            },
+            {
+                "module": "Haskell.Types",
+                "name": "PersonResponse"
+            }
+        ],
+        "mkPersonResponse'": [
+            {
+                "module": "Haskell.Types",
+                "name": "Person"
+            },
+            {
+                "module": "Haskell.Types",
+                "name": "Response"
+            },
+            {
+                "module": "Haskell.Types",
+                "name": "PersonResponse"
+            }
+        ],
+        "mkSuccessResponse": [
+            {
+                "module": "Haskell.Types",
+                "name": "Response"
+            }
+        ]
+    },
+    "Haskell.Types": {
+        "HttpResponse": [
+            {
+                "module": "Haskell.Types",
+                "name": "Response"
+            }
+        ],
+        "PersonResponse": [
+            {
+                "module": "Haskell.Types",
+                "name": "Response"
+            },
+            {
+                "module": "Haskell.Types",
+                "name": "Person"
+            }
+        ]
+    }
+}

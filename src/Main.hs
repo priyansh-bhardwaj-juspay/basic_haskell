@@ -2,7 +2,7 @@ module Main where
 
 import           Haskell.Basic     as HB
 import           Haskell.Compute   as HC
-import           Haskell.Transform as HT
+import qualified Haskell.Types as HT
 
 -- JAF:The function 'main' declared in Haskell is an IO action that executes a sequence of operations. It starts by creating a
 -- list 'l' of integers, calculates its length using 'listLength' function from a hypothetical module 'HB', and then
@@ -19,7 +19,4 @@ main = do
   putStrLn "Hello, Haskell!"
   putStrLn (show length)
   putStrLn (show result)
-  let person = HT.mkPerson "Priyansh" 23
-      response = HT.mkSuccessResponse (Just "Success") person
-  print response
 

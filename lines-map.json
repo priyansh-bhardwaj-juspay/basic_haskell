@@ -1,0 +1,318 @@
+{
+    "src/haskell/types.rs": [
+        {
+            "type": "type",
+            "identifier": "crate::haskell::types->-Person",
+            "start": 1,
+            "end": 6
+        },
+        {
+            "type": "type",
+            "identifier": "crate::haskell::types->-Days",
+            "start": 7,
+            "end": 16
+        },
+        {
+            "type": "type",
+            "identifier": "crate::haskell::types->-Response",
+            "start": 17,
+            "end": 29
+        },
+        {
+            "type": "type",
+            "identifier": "crate::haskell::types->-HttpResponse",
+            "start": 30,
+            "end": 34
+        },
+        {
+            "type": "type",
+            "identifier": "crate::haskell::types->-PersonResponse",
+            "start": 35,
+            "end": 36
+        },
+        {
+            "type": "type",
+            "identifier": "crate::haskell::types->-Message",
+            "start": 37,
+            "end": 40
+        }
+    ],
+    "src/haskell/transform.rs": [
+        {
+            "type": "import",
+            "identifier": "crate::haskell::transform->-",
+            "start": 1,
+            "end": 1
+        },
+        {
+            "type": "import",
+            "identifier": "crate::haskell::transform->-use crate::haskell::types::Response as HTResponse;",
+            "start": 2,
+            "end": 2
+        },
+        {
+            "type": "import",
+            "identifier": "crate::haskell::transform->-use self::module::SuccessResponse;",
+            "start": 3,
+            "end": 3
+        },
+        {
+            "type": "import",
+            "identifier": "crate::haskell::transform->-use crate::haskell::types::Response;",
+            "start": 4,
+            "end": 4
+        },
+        {
+            "type": "function",
+            "identifier": "crate::haskell::transform->-mk_success_response",
+            "start": 5,
+            "end": 8
+        },
+        {
+            "type": "function",
+            "identifier": "crate::haskell::transform->-mk_error_response",
+            "start": 9,
+            "end": 12
+        },
+        {
+            "type": "function",
+            "identifier": "crate::haskell::transform->-mk_person_response",
+            "start": 13,
+            "end": 14
+        },
+        {
+            "type": "type",
+            "identifier": "crate::haskell::transform->-TcpResponse",
+            "start": 15,
+            "end": 19
+        }
+    ],
+    "src/main.rs": [
+        {
+            "type": "function",
+            "identifier": "crate::main->-main",
+            "start": 2,
+            "end": 17
+        }
+    ],
+    "src/haskell/basic.rs": [
+        {
+            "type": "import",
+            "identifier": "crate::haskell::basic->-",
+            "start": 1,
+            "end": 1
+        },
+        {
+            "type": "import",
+            "identifier": "crate::haskell::basic->-use std::clone::Clone;",
+            "start": 2,
+            "end": 2
+        },
+        {
+            "type": "import",
+            "identifier": "crate::haskell::basic->-use crate::list::List;",
+            "start": 3,
+            "end": 3
+        },
+        {
+            "type": "import",
+            "identifier": "crate::haskell::basic->-use std::char;",
+            "start": 4,
+            "end": 4
+        },
+        {
+            "type": "import",
+            "identifier": "crate::haskell::basic->-use super::List;",
+            "start": 5,
+            "end": 5
+        },
+        {
+            "type": "import",
+            "identifier": "crate::haskell::basic->-use std::clone::Clone as _alias;",
+            "start": 6,
+            "end": 6
+        },
+        {
+            "type": "import",
+            "identifier": "crate::haskell::basic->-use std::ascii::AsciiExt;",
+            "start": 7,
+            "end": 7
+        },
+        {
+            "type": "import",
+            "identifier": "crate::haskell::basic->-use std::clone::Clone as _;",
+            "start": 8,
+            "end": 8
+        },
+        {
+            "type": "import",
+            "identifier": "crate::haskell::basic->-use std::mem;",
+            "start": 9,
+            "end": 9
+        },
+        {
+            "type": "import",
+            "identifier": "crate::haskell::basic->-use std::clone::Clone as CloneTrait;",
+            "start": 10,
+            "end": 10
+        },
+        {
+            "type": "function",
+            "identifier": "crate::haskell::basic->-list_length",
+            "start": 11,
+            "end": 18
+        },
+        {
+            "type": "function",
+            "identifier": "crate::haskell::basic->-list_reverse",
+            "start": 19,
+            "end": 29
+        },
+        {
+            "type": "function",
+            "identifier": "crate::haskell::basic->-list_concat",
+            "start": 30,
+            "end": 31
+        },
+        {
+            "type": "function",
+            "identifier": "crate::haskell::basic->-list_map",
+            "start": 32,
+            "end": 46
+        },
+        {
+            "type": "function",
+            "identifier": "crate::haskell::basic->-list_filter",
+            "start": 47,
+            "end": 50
+        },
+        {
+            "type": "function",
+            "identifier": "crate::haskell::basic->-list_head",
+            "start": 51,
+            "end": 57
+        },
+        {
+            "type": "function",
+            "identifier": "crate::haskell::basic->-list_tail",
+            "start": 58,
+            "end": 64
+        },
+        {
+            "type": "function",
+            "identifier": "crate::haskell::basic->-list_last",
+            "start": 65,
+            "end": 72
+        },
+        {
+            "type": "function",
+            "identifier": "crate::haskell::basic->-list_take",
+            "start": 73,
+            "end": 83
+        },
+        {
+            "type": "function",
+            "identifier": "crate::haskell::basic->-list_drop",
+            "start": 84,
+            "end": 93
+        },
+        {
+            "type": "function",
+            "identifier": "crate::haskell::basic->-list_null",
+            "start": 94,
+            "end": 97
+        },
+        {
+            "type": "function",
+            "identifier": "crate::haskell::basic->-string_to_upper_case",
+            "start": 98,
+            "end": 102
+        },
+        {
+            "type": "function",
+            "identifier": "crate::haskell::basic->-string_to_lower_case",
+            "start": 103,
+            "end": 106
+        },
+        {
+            "type": "function",
+            "identifier": "crate::haskell::basic->-string_reverse",
+            "start": 107,
+            "end": 110
+        },
+        {
+            "type": "function",
+            "identifier": "crate::haskell::basic->-string_concat",
+            "start": 111,
+            "end": 115
+        },
+        {
+            "type": "function",
+            "identifier": "crate::haskell::basic->-string_is_palindrome",
+            "start": 116,
+            "end": 120
+        }
+    ],
+    "src/haskell/compute.rs": [
+        {
+            "type": "import",
+            "identifier": "crate::haskell::compute->-use std::ops::Add;",
+            "start": 1,
+            "end": 1
+        },
+        {
+            "type": "import",
+            "identifier": "crate::haskell::compute->-use std::fmt::Debug;",
+            "start": 2,
+            "end": 2
+        },
+        {
+            "type": "function",
+            "identifier": "crate::haskell::compute->-add",
+            "start": 3,
+            "end": 8
+        },
+        {
+            "type": "function",
+            "identifier": "crate::haskell::compute->-sub",
+            "start": 9,
+            "end": 12
+        },
+        {
+            "type": "function",
+            "identifier": "crate::haskell::compute->-mul",
+            "start": 13,
+            "end": 16
+        },
+        {
+            "type": "function",
+            "identifier": "crate::haskell::compute->-div",
+            "start": 17,
+            "end": 20
+        },
+        {
+            "type": "function",
+            "identifier": "crate::haskell::compute->-modulus",
+            "start": 21,
+            "end": 24
+        },
+        {
+            "type": "function",
+            "identifier": "crate::haskell::compute->-power",
+            "start": 25,
+            "end": 28
+        },
+        {
+            "type": "function",
+            "identifier": "crate::haskell::compute->-factorial",
+            "start": 29,
+            "end": 36
+        },
+        {
+            "type": "function",
+            "identifier": "crate::haskell::compute->-gcdd",
+            "start": 37,
+            "end": 43
+        }
+    ]
+}
