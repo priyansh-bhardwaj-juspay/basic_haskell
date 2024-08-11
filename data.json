@@ -1,4 +1,166 @@
 {
+    "Haskell.Transform": {
+        "mkMessage**src/Haskell/Transform.hs:41:1-9": {
+            "function_name": "mkMessage**src/Haskell/Transform.hs:41:1-9",
+            "src_loc": "src/Haskell/Transform.hs:41:1-9",
+            "stringified_code": "mkMessage message = HT.Message {message = message}",
+            "function_signature": "Text -> Message",
+            "functions_called": [
+                {
+                    "_type": "Text",
+                    "arguments": [],
+                    "module_name": "_in",
+                    "name": "message",
+                    "package_name": "",
+                    "src_Loc": "src/Haskell/Transform.hs:42:15-21"
+                }
+            ]
+        },
+        "mkPerson**src/Haskell/Transform.hs:34:1-8": {
+            "function_name": "mkPerson**src/Haskell/Transform.hs:34:1-8",
+            "src_loc": "src/Haskell/Transform.hs:34:1-8",
+            "stringified_code": "mkPerson name age = HT.Person {name = name, age = age}",
+            "function_signature": "String -> Int -> Person",
+            "functions_called": [
+                {
+                    "_type": "String",
+                    "arguments": [],
+                    "module_name": "_in",
+                    "name": "name",
+                    "package_name": "",
+                    "src_Loc": "src/Haskell/Transform.hs:36:14-17"
+                },
+                {
+                    "_type": "Int",
+                    "arguments": [],
+                    "module_name": "_in",
+                    "name": "age",
+                    "package_name": "",
+                    "src_Loc": "src/Haskell/Transform.hs:37:13-15"
+                }
+            ]
+        },
+        "mkPersonResponse'**src/Haskell/Transform.hs:24:1-17": {
+            "function_name": "mkPersonResponse'**src/Haskell/Transform.hs:24:1-17",
+            "src_loc": "src/Haskell/Transform.hs:24:1-17",
+            "stringified_code": "mkPersonResponse' message name age\n  = HT.Success\n      {message = message, payload = HT.Person {name = name, age = age}}",
+            "function_signature": "Maybe Text -> String -> Int -> PersonResponse",
+            "functions_called": [
+                {
+                    "_type": "Maybe Text",
+                    "arguments": [],
+                    "module_name": "_in",
+                    "name": "message",
+                    "package_name": "",
+                    "src_Loc": "src/Haskell/Transform.hs:26:17-23"
+                },
+                {
+                    "_type": "String",
+                    "arguments": [],
+                    "module_name": "_in",
+                    "name": "name",
+                    "package_name": "",
+                    "src_Loc": "src/Haskell/Transform.hs:28:16-19"
+                },
+                {
+                    "_type": "Int",
+                    "arguments": [],
+                    "module_name": "_in",
+                    "name": "age",
+                    "package_name": "",
+                    "src_Loc": "src/Haskell/Transform.hs:29:15-17"
+                },
+                {
+                    "_type": "String",
+                    "arguments": [],
+                    "module_name": "_in",
+                    "name": "name",
+                    "package_name": "",
+                    "src_Loc": "src/Haskell/Transform.hs:28:16-19"
+                },
+                {
+                    "_type": "Int",
+                    "arguments": [],
+                    "module_name": "_in",
+                    "name": "age",
+                    "package_name": "",
+                    "src_Loc": "src/Haskell/Transform.hs:29:15-17"
+                }
+            ]
+        },
+        "mkErrorResponse**src/Haskell/Transform.hs:14:1-15": {
+            "function_name": "mkErrorResponse**src/Haskell/Transform.hs:14:1-15",
+            "src_loc": "src/Haskell/Transform.hs:14:1-15",
+            "stringified_code": "mkErrorResponse message code\n  = HT.Failure {code = code, message = message}",
+            "function_signature": "forall a. Maybe Text -> String -> Response a",
+            "functions_called": [
+                {
+                    "_type": "String",
+                    "arguments": [],
+                    "module_name": "_in",
+                    "name": "code",
+                    "package_name": "",
+                    "src_Loc": "src/Haskell/Transform.hs:16:14-17"
+                },
+                {
+                    "_type": "Maybe Text",
+                    "arguments": [],
+                    "module_name": "_in",
+                    "name": "message",
+                    "package_name": "",
+                    "src_Loc": "src/Haskell/Transform.hs:17:17-23"
+                }
+            ]
+        },
+        "mkSuccessResponse**src/Haskell/Transform.hs:7:1-17": {
+            "function_name": "mkSuccessResponse**src/Haskell/Transform.hs:7:1-17",
+            "src_loc": "src/Haskell/Transform.hs:7:1-17",
+            "stringified_code": "mkSuccessResponse message payload\n  = HT.Success {message = message, payload = payload}",
+            "function_signature": "forall a. Maybe Text -> a -> Response a",
+            "functions_called": [
+                {
+                    "_type": "Maybe Text",
+                    "arguments": [],
+                    "module_name": "_in",
+                    "name": "message",
+                    "package_name": "",
+                    "src_Loc": "src/Haskell/Transform.hs:9:17-23"
+                },
+                {
+                    "_type": "a_a34w",
+                    "arguments": [],
+                    "module_name": "_in",
+                    "name": "payload",
+                    "package_name": "",
+                    "src_Loc": "src/Haskell/Transform.hs:10:17-23"
+                }
+            ]
+        },
+        "mkPersonResponse**src/Haskell/Transform.hs:21:1-16": {
+            "function_name": "mkPersonResponse**src/Haskell/Transform.hs:21:1-16",
+            "src_loc": "src/Haskell/Transform.hs:21:1-16",
+            "stringified_code": "mkPersonResponse message person = mkSuccessResponse message person",
+            "function_signature": "Maybe Text -> Person -> PersonResponse",
+            "functions_called": [
+                {
+                    "_type": "Maybe Text",
+                    "arguments": [],
+                    "module_name": "_in",
+                    "name": "message",
+                    "package_name": "",
+                    "src_Loc": "src/Haskell/Transform.hs:21:53-59"
+                },
+                {
+                    "_type": "Person",
+                    "arguments": [],
+                    "module_name": "_in",
+                    "name": "person",
+                    "package_name": "",
+                    "src_Loc": "src/Haskell/Transform.hs:21:61-66"
+                }
+            ]
+        }
+    },
     "Main": {
         "main**src/Main.hs:13:1-4": {
             "function_name": "main**src/Main.hs:13:1-4",
@@ -489,6 +651,408 @@
             ]
         }
     },
+    "Haskell.Compute": {
+        "gcdd**src/Haskell/Compute.hs:47:1-4": {
+            "function_name": "gcdd**src/Haskell/Compute.hs:47:1-4",
+            "src_loc": "src/Haskell/Compute.hs:47:1-4",
+            "stringified_code": "gcdd a b\n  | b == 0 = a\n  | otherwise = gcdd b (a `mod` b)",
+            "function_signature": "forall a. Integral a => a -> a -> a",
+            "functions_called": [
+                {
+                    "_type": "a_a1MC",
+                    "arguments": [],
+                    "module_name": "_in",
+                    "name": "a",
+                    "package_name": "",
+                    "src_Loc": "src/Haskell/Compute.hs:48:19"
+                },
+                {
+                    "_type": "a_a1MC",
+                    "arguments": [],
+                    "module_name": "_in",
+                    "name": "b",
+                    "package_name": "",
+                    "src_Loc": "src/Haskell/Compute.hs:49:24"
+                },
+                {
+                    "_type": "a_a1MC",
+                    "arguments": [],
+                    "module_name": "_in",
+                    "name": "a",
+                    "package_name": "",
+                    "src_Loc": "src/Haskell/Compute.hs:49:27"
+                },
+                {
+                    "_type": "a_a1MC",
+                    "arguments": [],
+                    "module_name": "_in",
+                    "name": "a",
+                    "package_name": "",
+                    "src_Loc": "src/Haskell/Compute.hs:49:27"
+                },
+                {
+                    "_type": "a_a1MC",
+                    "arguments": [],
+                    "module_name": "_in",
+                    "name": "b",
+                    "package_name": "",
+                    "src_Loc": "src/Haskell/Compute.hs:49:35"
+                }
+            ]
+        },
+        "factorial**src/Haskell/Compute.hs:39:1-9": {
+            "function_name": "factorial**src/Haskell/Compute.hs:39:1-9",
+            "src_loc": "src/Haskell/Compute.hs:39:1-9",
+            "stringified_code": "factorial 0 = 1\nfactorial n = n * factorial (n - 1)",
+            "function_signature": "forall a. Integral a => a -> a",
+            "functions_called": [
+                {
+                    "_type": "OverLit",
+                    "arguments": [],
+                    "module_name": "_lit",
+                    "name": "1",
+                    "package_name": "",
+                    "src_Loc": "src/Haskell/Compute.hs:39:15"
+                },
+                {
+                    "_type": "a_a1MO",
+                    "arguments": [],
+                    "module_name": "_in",
+                    "name": "n",
+                    "package_name": "",
+                    "src_Loc": "src/Haskell/Compute.hs:40:15"
+                },
+                {
+                    "_type": "a_a1MO",
+                    "arguments": [],
+                    "module_name": "_in",
+                    "name": "n",
+                    "package_name": "",
+                    "src_Loc": "src/Haskell/Compute.hs:40:15"
+                },
+                {
+                    "_type": "a_a1MO",
+                    "arguments": [],
+                    "module_name": "_in",
+                    "name": "n",
+                    "package_name": "",
+                    "src_Loc": "src/Haskell/Compute.hs:40:30"
+                },
+                {
+                    "_type": "a_a1MO",
+                    "arguments": [],
+                    "module_name": "_in",
+                    "name": "n",
+                    "package_name": "",
+                    "src_Loc": "src/Haskell/Compute.hs:40:30"
+                },
+                {
+                    "_type": "OverLit",
+                    "arguments": [],
+                    "module_name": "_lit",
+                    "name": "1",
+                    "package_name": "",
+                    "src_Loc": "src/Haskell/Compute.hs:40:34"
+                },
+                {
+                    "_type": "HsInteger",
+                    "arguments": [],
+                    "module_name": "_lit",
+                    "name": "1",
+                    "package_name": "",
+                    "src_Loc": "foo:-1:-1"
+                },
+                {
+                    "_type": "a_a1MO",
+                    "arguments": [],
+                    "module_name": "_in",
+                    "name": "n",
+                    "package_name": "",
+                    "src_Loc": "src/Haskell/Compute.hs:40:30"
+                },
+                {
+                    "_type": "a_a1MO",
+                    "arguments": [],
+                    "module_name": "_in",
+                    "name": "n",
+                    "package_name": "",
+                    "src_Loc": "src/Haskell/Compute.hs:40:30"
+                },
+                {
+                    "_type": "OverLit",
+                    "arguments": [],
+                    "module_name": "_lit",
+                    "name": "1",
+                    "package_name": "",
+                    "src_Loc": "src/Haskell/Compute.hs:40:34"
+                },
+                {
+                    "_type": "HsInteger",
+                    "arguments": [],
+                    "module_name": "_lit",
+                    "name": "1",
+                    "package_name": "",
+                    "src_Loc": "foo:-1:-1"
+                },
+                {
+                    "_type": "a_a1MO",
+                    "arguments": [],
+                    "module_name": "_in",
+                    "name": "n",
+                    "package_name": "",
+                    "src_Loc": "src/Haskell/Compute.hs:40:30"
+                },
+                {
+                    "_type": "a_a1MO",
+                    "arguments": [],
+                    "module_name": "_in",
+                    "name": "n",
+                    "package_name": "",
+                    "src_Loc": "src/Haskell/Compute.hs:40:30"
+                },
+                {
+                    "_type": "OverLit",
+                    "arguments": [],
+                    "module_name": "_lit",
+                    "name": "1",
+                    "package_name": "",
+                    "src_Loc": "src/Haskell/Compute.hs:40:34"
+                },
+                {
+                    "_type": "HsInteger",
+                    "arguments": [],
+                    "module_name": "_lit",
+                    "name": "1",
+                    "package_name": "",
+                    "src_Loc": "foo:-1:-1"
+                },
+                {
+                    "_type": "a_a1MO",
+                    "arguments": [],
+                    "module_name": "_in",
+                    "name": "n",
+                    "package_name": "",
+                    "src_Loc": "src/Haskell/Compute.hs:40:30"
+                },
+                {
+                    "_type": "a_a1MO",
+                    "arguments": [],
+                    "module_name": "_in",
+                    "name": "n",
+                    "package_name": "",
+                    "src_Loc": "src/Haskell/Compute.hs:40:30"
+                },
+                {
+                    "_type": "OverLit",
+                    "arguments": [],
+                    "module_name": "_lit",
+                    "name": "1",
+                    "package_name": "",
+                    "src_Loc": "src/Haskell/Compute.hs:40:34"
+                },
+                {
+                    "_type": "HsInteger",
+                    "arguments": [],
+                    "module_name": "_lit",
+                    "name": "1",
+                    "package_name": "",
+                    "src_Loc": "foo:-1:-1"
+                }
+            ]
+        },
+        "power**src/Haskell/Compute.hs:32:1-5": {
+            "function_name": "power**src/Haskell/Compute.hs:32:1-5",
+            "src_loc": "src/Haskell/Compute.hs:32:1-5",
+            "stringified_code": "power a b = a ^ b",
+            "function_signature": "forall a b. (Num a, Integral b) => a -> b -> a",
+            "functions_called": [
+                {
+                    "_type": "a_a1N6",
+                    "arguments": [],
+                    "module_name": "_in",
+                    "name": "a",
+                    "package_name": "",
+                    "src_Loc": "src/Haskell/Compute.hs:32:13"
+                },
+                {
+                    "_type": "a_a1N6",
+                    "arguments": [],
+                    "module_name": "_in",
+                    "name": "a",
+                    "package_name": "",
+                    "src_Loc": "src/Haskell/Compute.hs:32:13"
+                },
+                {
+                    "_type": "b_a1N7",
+                    "arguments": [],
+                    "module_name": "_in",
+                    "name": "b",
+                    "package_name": "",
+                    "src_Loc": "src/Haskell/Compute.hs:32:17"
+                }
+            ]
+        },
+        "modulus**src/Haskell/Compute.hs:27:1-7": {
+            "function_name": "modulus**src/Haskell/Compute.hs:27:1-7",
+            "src_loc": "src/Haskell/Compute.hs:27:1-7",
+            "stringified_code": "modulus a b = a `mod` b",
+            "function_signature": "forall a. Integral a => a -> a -> a",
+            "functions_called": [
+                {
+                    "_type": "a_a1Ni",
+                    "arguments": [],
+                    "module_name": "_in",
+                    "name": "a",
+                    "package_name": "",
+                    "src_Loc": "src/Haskell/Compute.hs:27:15"
+                },
+                {
+                    "_type": "a_a1Ni",
+                    "arguments": [],
+                    "module_name": "_in",
+                    "name": "a",
+                    "package_name": "",
+                    "src_Loc": "src/Haskell/Compute.hs:27:15"
+                },
+                {
+                    "_type": "a_a1Ni",
+                    "arguments": [],
+                    "module_name": "_in",
+                    "name": "b",
+                    "package_name": "",
+                    "src_Loc": "src/Haskell/Compute.hs:27:23"
+                }
+            ]
+        },
+        "div**src/Haskell/Compute.hs:21:1-3": {
+            "function_name": "div**src/Haskell/Compute.hs:21:1-3",
+            "src_loc": "src/Haskell/Compute.hs:21:1-3",
+            "stringified_code": "div a b = a / b",
+            "function_signature": "forall a. Fractional a => a -> a -> a",
+            "functions_called": [
+                {
+                    "_type": "a_a1No",
+                    "arguments": [],
+                    "module_name": "_in",
+                    "name": "a",
+                    "package_name": "",
+                    "src_Loc": "src/Haskell/Compute.hs:21:11"
+                },
+                {
+                    "_type": "a_a1No",
+                    "arguments": [],
+                    "module_name": "_in",
+                    "name": "a",
+                    "package_name": "",
+                    "src_Loc": "src/Haskell/Compute.hs:21:11"
+                },
+                {
+                    "_type": "a_a1No",
+                    "arguments": [],
+                    "module_name": "_in",
+                    "name": "b",
+                    "package_name": "",
+                    "src_Loc": "src/Haskell/Compute.hs:21:15"
+                }
+            ]
+        },
+        "mul**src/Haskell/Compute.hs:16:1-3": {
+            "function_name": "mul**src/Haskell/Compute.hs:16:1-3",
+            "src_loc": "src/Haskell/Compute.hs:16:1-3",
+            "stringified_code": "mul a b = a * b",
+            "function_signature": "forall a. Num a => a -> a -> a",
+            "functions_called": [
+                {
+                    "_type": "a_a1Nu",
+                    "arguments": [],
+                    "module_name": "_in",
+                    "name": "a",
+                    "package_name": "",
+                    "src_Loc": "src/Haskell/Compute.hs:16:11"
+                },
+                {
+                    "_type": "a_a1Nu",
+                    "arguments": [],
+                    "module_name": "_in",
+                    "name": "a",
+                    "package_name": "",
+                    "src_Loc": "src/Haskell/Compute.hs:16:11"
+                },
+                {
+                    "_type": "a_a1Nu",
+                    "arguments": [],
+                    "module_name": "_in",
+                    "name": "b",
+                    "package_name": "",
+                    "src_Loc": "src/Haskell/Compute.hs:16:15"
+                }
+            ]
+        },
+        "sub**src/Haskell/Compute.hs:11:1-3": {
+            "function_name": "sub**src/Haskell/Compute.hs:11:1-3",
+            "src_loc": "src/Haskell/Compute.hs:11:1-3",
+            "stringified_code": "sub a b = a - b",
+            "function_signature": "forall a. Num a => a -> a -> a",
+            "functions_called": [
+                {
+                    "_type": "a_a1NA",
+                    "arguments": [],
+                    "module_name": "_in",
+                    "name": "a",
+                    "package_name": "",
+                    "src_Loc": "src/Haskell/Compute.hs:11:11"
+                },
+                {
+                    "_type": "a_a1NA",
+                    "arguments": [],
+                    "module_name": "_in",
+                    "name": "a",
+                    "package_name": "",
+                    "src_Loc": "src/Haskell/Compute.hs:11:11"
+                },
+                {
+                    "_type": "a_a1NA",
+                    "arguments": [],
+                    "module_name": "_in",
+                    "name": "b",
+                    "package_name": "",
+                    "src_Loc": "src/Haskell/Compute.hs:11:15"
+                }
+            ]
+        },
+        "add**src/Haskell/Compute.hs:5:1-3": {
+            "function_name": "add**src/Haskell/Compute.hs:5:1-3",
+            "src_loc": "src/Haskell/Compute.hs:5:1-3",
+            "stringified_code": "add a b = a + b",
+            "function_signature": "forall a. Num a => a -> a -> a",
+            "functions_called": [
+                {
+                    "_type": "a_a1NG",
+                    "arguments": [],
+                    "module_name": "_in",
+                    "name": "a",
+                    "package_name": "",
+                    "src_Loc": "src/Haskell/Compute.hs:5:11"
+                },
+                {
+                    "_type": "a_a1NG",
+                    "arguments": [],
+                    "module_name": "_in",
+                    "name": "a",
+                    "package_name": "",
+                    "src_Loc": "src/Haskell/Compute.hs:5:11"
+                },
+                {
+                    "_type": "a_a1NG",
+                    "arguments": [],
+                    "module_name": "_in",
+                    "name": "b",
+                    "package_name": "",
+                    "src_Loc": "src/Haskell/Compute.hs:5:15"
+                }
+            ]
+        }
+    },
     "Haskell.Basic": {
         "stringToLowerCase**src/Haskell/Basic.hs:97:1-17": {
             "function_name": "stringToLowerCase**src/Haskell/Basic.hs:97:1-17",
@@ -649,7 +1213,7 @@
             "function_signature": "forall a. Int -> [a] -> [a]",
             "functions_called": [
                 {
-                    "_type": "[a_a1bG]",
+                    "_type": "[a_a19k]",
                     "arguments": [],
                     "module_name": "_in",
                     "name": "xs",
@@ -689,7 +1253,7 @@
                     "src_Loc": "foo:-1:-1"
                 },
                 {
-                    "_type": "[a_a1bG]",
+                    "_type": "[a_a19k]",
                     "arguments": [],
                     "module_name": "_in",
                     "name": "xs",
@@ -705,7 +1269,7 @@
             "function_signature": "forall a. Int -> [a] -> [a]",
             "functions_called": [
                 {
-                    "_type": "a_a1bT",
+                    "_type": "a_a19x",
                     "arguments": [],
                     "module_name": "_in",
                     "name": "x",
@@ -713,7 +1277,7 @@
                     "src_Loc": "src/Haskell/Basic.hs:66:21"
                 },
                 {
-                    "_type": "a_a1bT",
+                    "_type": "a_a19x",
                     "arguments": [],
                     "module_name": "_in",
                     "name": "x",
@@ -753,7 +1317,7 @@
                     "src_Loc": "foo:-1:-1"
                 },
                 {
-                    "_type": "[a_a1bT]",
+                    "_type": "[a_a19x]",
                     "arguments": [],
                     "module_name": "_in",
                     "name": "xs",
@@ -889,7 +1453,7 @@
                     "src_Loc": "foo:-1:-1"
                 },
                 {
-                    "_type": "[a_a1bT]",
+                    "_type": "[a_a19x]",
                     "arguments": [],
                     "module_name": "_in",
                     "name": "xs",
@@ -905,7 +1469,7 @@
             "function_signature": "forall a. [a] -> a",
             "functions_called": [
                 {
-                    "_type": "a_a1ca",
+                    "_type": "a_a19O",
                     "arguments": [],
                     "module_name": "_in",
                     "name": "x",
@@ -913,7 +1477,7 @@
                     "src_Loc": "src/Haskell/Basic.hs:57:19"
                 },
                 {
-                    "_type": "[a_a1ca]",
+                    "_type": "[a_a19O]",
                     "arguments": [],
                     "module_name": "_in",
                     "name": "xs",
@@ -937,7 +1501,7 @@
             "function_signature": "forall a. [a] -> [a]",
             "functions_called": [
                 {
-                    "_type": "[a_a1d8]",
+                    "_type": "[a_a1aM]",
                     "arguments": [],
                     "module_name": "_in",
                     "name": "xs",
@@ -961,7 +1525,7 @@
             "function_signature": "forall a. [a] -> a",
             "functions_called": [
                 {
-                    "_type": "a_a1de",
+                    "_type": "a_a1aS",
                     "arguments": [],
                     "module_name": "_in",
                     "name": "x",
@@ -985,7 +1549,7 @@
             "function_signature": "forall a. (a -> Bool) -> [a] -> [a]",
             "functions_called": [
                 {
-                    "_type": "a_a1dk",
+                    "_type": "a_a1aY",
                     "arguments": [],
                     "module_name": "_in",
                     "name": "x",
@@ -993,7 +1557,7 @@
                     "src_Loc": "src/Haskell/Basic.hs:38:19"
                 },
                 {
-                    "_type": "a_a1dk",
+                    "_type": "a_a1aY",
                     "arguments": [],
                     "module_name": "_in",
                     "name": "x",
@@ -1001,7 +1565,7 @@
                     "src_Loc": "src/Haskell/Basic.hs:38:19"
                 },
                 {
-                    "_type": "a_a1dk -> Bool",
+                    "_type": "a_a1aY -> Bool",
                     "arguments": [],
                     "module_name": "_in",
                     "name": "p",
@@ -1009,7 +1573,7 @@
                     "src_Loc": "src/Haskell/Basic.hs:38:34"
                 },
                 {
-                    "_type": "[a_a1dk]",
+                    "_type": "[a_a1aY]",
                     "arguments": [],
                     "module_name": "_in",
                     "name": "xs",
@@ -1017,7 +1581,7 @@
                     "src_Loc": "src/Haskell/Basic.hs:38:36-37"
                 },
                 {
-                    "_type": "a_a1dk -> Bool",
+                    "_type": "a_a1aY -> Bool",
                     "arguments": [],
                     "module_name": "_in",
                     "name": "p",
@@ -1025,7 +1589,7 @@
                     "src_Loc": "src/Haskell/Basic.hs:38:34"
                 },
                 {
-                    "_type": "a_a1dk -> Bool",
+                    "_type": "a_a1aY -> Bool",
                     "arguments": [],
                     "module_name": "_in",
                     "name": "p",
@@ -1033,7 +1597,7 @@
                     "src_Loc": "src/Haskell/Basic.hs:38:34"
                 },
                 {
-                    "_type": "[a_a1dk]",
+                    "_type": "[a_a1aY]",
                     "arguments": [],
                     "module_name": "_in",
                     "name": "xs",
@@ -1041,7 +1605,7 @@
                     "src_Loc": "src/Haskell/Basic.hs:38:36-37"
                 },
                 {
-                    "_type": "a_a1dk -> Bool",
+                    "_type": "a_a1aY -> Bool",
                     "arguments": [],
                     "module_name": "_in",
                     "name": "p",
@@ -1049,7 +1613,7 @@
                     "src_Loc": "src/Haskell/Basic.hs:39:30"
                 },
                 {
-                    "_type": "[a_a1dk]",
+                    "_type": "[a_a1aY]",
                     "arguments": [],
                     "module_name": "_in",
                     "name": "xs",
@@ -1065,7 +1629,7 @@
             "function_signature": "forall a b. (a -> b) -> [a] -> [b]",
             "functions_called": [
                 {
-                    "_type": "a_a1ds -> b_a1dt",
+                    "_type": "a_a1b6 -> b_a1b7",
                     "arguments": [],
                     "module_name": "_in",
                     "name": "f",
@@ -1073,7 +1637,7 @@
                     "src_Loc": "src/Haskell/Basic.hs:30:20"
                 },
                 {
-                    "_type": "a_a1ds",
+                    "_type": "a_a1b6",
                     "arguments": [],
                     "module_name": "_in",
                     "name": "x",
@@ -1081,7 +1645,7 @@
                     "src_Loc": "src/Haskell/Basic.hs:30:22"
                 },
                 {
-                    "_type": "a_a1ds -> b_a1dt",
+                    "_type": "a_a1b6 -> b_a1b7",
                     "arguments": [],
                     "module_name": "_in",
                     "name": "f",
@@ -1089,7 +1653,7 @@
                     "src_Loc": "src/Haskell/Basic.hs:30:20"
                 },
                 {
-                    "_type": "a_a1ds",
+                    "_type": "a_a1b6",
                     "arguments": [],
                     "module_name": "_in",
                     "name": "x",
@@ -1097,7 +1661,7 @@
                     "src_Loc": "src/Haskell/Basic.hs:30:22"
                 },
                 {
-                    "_type": "a_a1ds -> b_a1dt",
+                    "_type": "a_a1b6 -> b_a1b7",
                     "arguments": [],
                     "module_name": "_in",
                     "name": "f",
@@ -1105,7 +1669,7 @@
                     "src_Loc": "src/Haskell/Basic.hs:30:20"
                 },
                 {
-                    "_type": "a_a1ds",
+                    "_type": "a_a1b6",
                     "arguments": [],
                     "module_name": "_in",
                     "name": "x",
@@ -1113,7 +1677,7 @@
                     "src_Loc": "src/Haskell/Basic.hs:30:22"
                 },
                 {
-                    "_type": "a_a1ds -> b_a1dt",
+                    "_type": "a_a1b6 -> b_a1b7",
                     "arguments": [],
                     "module_name": "_in",
                     "name": "f",
@@ -1121,7 +1685,7 @@
                     "src_Loc": "src/Haskell/Basic.hs:30:34"
                 },
                 {
-                    "_type": "[a_a1ds]",
+                    "_type": "[a_a1b6]",
                     "arguments": [],
                     "module_name": "_in",
                     "name": "xs",
@@ -1129,7 +1693,7 @@
                     "src_Loc": "src/Haskell/Basic.hs:30:36-37"
                 },
                 {
-                    "_type": "a_a1ds -> b_a1dt",
+                    "_type": "a_a1b6 -> b_a1b7",
                     "arguments": [],
                     "module_name": "_in",
                     "name": "f",
@@ -1137,7 +1701,7 @@
                     "src_Loc": "src/Haskell/Basic.hs:30:34"
                 },
                 {
-                    "_type": "a_a1ds -> b_a1dt",
+                    "_type": "a_a1b6 -> b_a1b7",
                     "arguments": [],
                     "module_name": "_in",
                     "name": "f",
@@ -1145,7 +1709,7 @@
                     "src_Loc": "src/Haskell/Basic.hs:30:34"
                 },
                 {
-                    "_type": "[a_a1ds]",
+                    "_type": "[a_a1b6]",
                     "arguments": [],
                     "module_name": "_in",
                     "name": "xs",
@@ -1161,7 +1725,7 @@
             "function_signature": "forall a. [a] -> [a] -> [a]",
             "functions_called": [
                 {
-                    "_type": "[a_a1dB]",
+                    "_type": "[a_a1bf]",
                     "arguments": [],
                     "module_name": "_in",
                     "name": "ys",
@@ -1169,7 +1733,7 @@
                     "src_Loc": "src/Haskell/Basic.hs:22:30-31"
                 },
                 {
-                    "_type": "[a_a1dB]",
+                    "_type": "[a_a1bf]",
                     "arguments": [],
                     "module_name": "_in",
                     "name": "xs",
@@ -1191,7 +1755,7 @@
             "function_signature": "forall a. [a] -> [a]",
             "functions_called": [
                 {
-                    "_type": "[a_a1dS]",
+                    "_type": "[a_a1bw]",
                     "arguments": [],
                     "module_name": "_in",
                     "name": "xs",
@@ -1199,7 +1763,7 @@
                     "src_Loc": "src/Haskell/Basic.hs:15:34-35"
                 },
                 {
-                    "_type": "[a_a1dS]",
+                    "_type": "[a_a1bw]",
                     "arguments": [],
                     "module_name": "_in",
                     "name": "xs",
@@ -1207,7 +1771,7 @@
                     "src_Loc": "src/Haskell/Basic.hs:15:34-35"
                 },
                 {
-                    "_type": "[a_a1dS]",
+                    "_type": "[a_a1bw]",
                     "arguments": [],
                     "module_name": "_in",
                     "name": "xs",
@@ -1215,7 +1779,7 @@
                     "src_Loc": "src/Haskell/Basic.hs:15:34-35"
                 },
                 {
-                    "_type": "a_a1dS",
+                    "_type": "a_a1bw",
                     "arguments": [],
                     "module_name": "_in",
                     "name": "x",
@@ -1223,7 +1787,7 @@
                     "src_Loc": "src/Haskell/Basic.hs:15:41"
                 },
                 {
-                    "_type": "a_a1dS",
+                    "_type": "a_a1bw",
                     "arguments": [],
                     "module_name": "_in",
                     "name": "x",
@@ -1333,7 +1897,7 @@
                     "src_Loc": "foo:-1:-1"
                 },
                 {
-                    "_type": "[a_a1e3]",
+                    "_type": "[a_a1bH]",
                     "arguments": [],
                     "module_name": "_in",
                     "name": "xs",
@@ -1341,470 +1905,12 @@
                     "src_Loc": "src/Haskell/Basic.hs:8:36-37"
                 },
                 {
-                    "_type": "[a_a1e3]",
+                    "_type": "[a_a1bH]",
                     "arguments": [],
                     "module_name": "_in",
                     "name": "xs",
                     "package_name": "",
                     "src_Loc": "src/Haskell/Basic.hs:8:36-37"
-                }
-            ]
-        }
-    },
-    "Haskell.Transform": {
-        "mkErrorResponse**src/Haskell/Transform.hs:14:1-15": {
-            "function_name": "mkErrorResponse**src/Haskell/Transform.hs:14:1-15",
-            "src_loc": "src/Haskell/Transform.hs:14:1-15",
-            "stringified_code": "mkErrorResponse message code\n  = HT.Failure {code = code, message = message}",
-            "function_signature": "forall a. Maybe Text -> String -> Response a",
-            "functions_called": [
-                {
-                    "_type": "String",
-                    "arguments": [],
-                    "module_name": "_in",
-                    "name": "code",
-                    "package_name": "",
-                    "src_Loc": "src/Haskell/Transform.hs:16:14-17"
-                },
-                {
-                    "_type": "Maybe Text",
-                    "arguments": [],
-                    "module_name": "_in",
-                    "name": "message",
-                    "package_name": "",
-                    "src_Loc": "src/Haskell/Transform.hs:17:17-23"
-                }
-            ]
-        },
-        "mkSuccessResponse**src/Haskell/Transform.hs:7:1-17": {
-            "function_name": "mkSuccessResponse**src/Haskell/Transform.hs:7:1-17",
-            "src_loc": "src/Haskell/Transform.hs:7:1-17",
-            "stringified_code": "mkSuccessResponse message payload\n  = HT.Success {message = message, payload = payload}",
-            "function_signature": "forall a. Maybe Text -> a -> Response a",
-            "functions_called": [
-                {
-                    "_type": "Maybe Text",
-                    "arguments": [],
-                    "module_name": "_in",
-                    "name": "message",
-                    "package_name": "",
-                    "src_Loc": "src/Haskell/Transform.hs:9:17-23"
-                },
-                {
-                    "_type": "a_a2ID",
-                    "arguments": [],
-                    "module_name": "_in",
-                    "name": "payload",
-                    "package_name": "",
-                    "src_Loc": "src/Haskell/Transform.hs:10:17-23"
-                }
-            ]
-        },
-        "mkPersonResponse**src/Haskell/Transform.hs:21:1-16": {
-            "function_name": "mkPersonResponse**src/Haskell/Transform.hs:21:1-16",
-            "src_loc": "src/Haskell/Transform.hs:21:1-16",
-            "stringified_code": "mkPersonResponse = mkSuccessResponse",
-            "function_signature": "Maybe Text -> Person -> PersonResponse"
-        }
-    },
-    "Haskell.Compute": {
-        "gcdd**src/Haskell/Compute.hs:47:1-4": {
-            "function_name": "gcdd**src/Haskell/Compute.hs:47:1-4",
-            "src_loc": "src/Haskell/Compute.hs:47:1-4",
-            "stringified_code": "gcdd a b\n  | b == 0 = a\n  | otherwise = gcdd b (a `mod` b)",
-            "function_signature": "forall a. Integral a => a -> a -> a",
-            "functions_called": [
-                {
-                    "_type": "a_a1OY",
-                    "arguments": [],
-                    "module_name": "_in",
-                    "name": "a",
-                    "package_name": "",
-                    "src_Loc": "src/Haskell/Compute.hs:48:19"
-                },
-                {
-                    "_type": "a_a1OY",
-                    "arguments": [],
-                    "module_name": "_in",
-                    "name": "b",
-                    "package_name": "",
-                    "src_Loc": "src/Haskell/Compute.hs:49:24"
-                },
-                {
-                    "_type": "a_a1OY",
-                    "arguments": [],
-                    "module_name": "_in",
-                    "name": "a",
-                    "package_name": "",
-                    "src_Loc": "src/Haskell/Compute.hs:49:27"
-                },
-                {
-                    "_type": "a_a1OY",
-                    "arguments": [],
-                    "module_name": "_in",
-                    "name": "a",
-                    "package_name": "",
-                    "src_Loc": "src/Haskell/Compute.hs:49:27"
-                },
-                {
-                    "_type": "a_a1OY",
-                    "arguments": [],
-                    "module_name": "_in",
-                    "name": "b",
-                    "package_name": "",
-                    "src_Loc": "src/Haskell/Compute.hs:49:35"
-                }
-            ]
-        },
-        "factorial**src/Haskell/Compute.hs:39:1-9": {
-            "function_name": "factorial**src/Haskell/Compute.hs:39:1-9",
-            "src_loc": "src/Haskell/Compute.hs:39:1-9",
-            "stringified_code": "factorial 0 = 1\nfactorial n = n * factorial (n - 1)",
-            "function_signature": "forall a. Integral a => a -> a",
-            "functions_called": [
-                {
-                    "_type": "OverLit",
-                    "arguments": [],
-                    "module_name": "_lit",
-                    "name": "1",
-                    "package_name": "",
-                    "src_Loc": "src/Haskell/Compute.hs:39:15"
-                },
-                {
-                    "_type": "a_a1Pa",
-                    "arguments": [],
-                    "module_name": "_in",
-                    "name": "n",
-                    "package_name": "",
-                    "src_Loc": "src/Haskell/Compute.hs:40:15"
-                },
-                {
-                    "_type": "a_a1Pa",
-                    "arguments": [],
-                    "module_name": "_in",
-                    "name": "n",
-                    "package_name": "",
-                    "src_Loc": "src/Haskell/Compute.hs:40:15"
-                },
-                {
-                    "_type": "a_a1Pa",
-                    "arguments": [],
-                    "module_name": "_in",
-                    "name": "n",
-                    "package_name": "",
-                    "src_Loc": "src/Haskell/Compute.hs:40:30"
-                },
-                {
-                    "_type": "a_a1Pa",
-                    "arguments": [],
-                    "module_name": "_in",
-                    "name": "n",
-                    "package_name": "",
-                    "src_Loc": "src/Haskell/Compute.hs:40:30"
-                },
-                {
-                    "_type": "OverLit",
-                    "arguments": [],
-                    "module_name": "_lit",
-                    "name": "1",
-                    "package_name": "",
-                    "src_Loc": "src/Haskell/Compute.hs:40:34"
-                },
-                {
-                    "_type": "HsInteger",
-                    "arguments": [],
-                    "module_name": "_lit",
-                    "name": "1",
-                    "package_name": "",
-                    "src_Loc": "foo:-1:-1"
-                },
-                {
-                    "_type": "a_a1Pa",
-                    "arguments": [],
-                    "module_name": "_in",
-                    "name": "n",
-                    "package_name": "",
-                    "src_Loc": "src/Haskell/Compute.hs:40:30"
-                },
-                {
-                    "_type": "a_a1Pa",
-                    "arguments": [],
-                    "module_name": "_in",
-                    "name": "n",
-                    "package_name": "",
-                    "src_Loc": "src/Haskell/Compute.hs:40:30"
-                },
-                {
-                    "_type": "OverLit",
-                    "arguments": [],
-                    "module_name": "_lit",
-                    "name": "1",
-                    "package_name": "",
-                    "src_Loc": "src/Haskell/Compute.hs:40:34"
-                },
-                {
-                    "_type": "HsInteger",
-                    "arguments": [],
-                    "module_name": "_lit",
-                    "name": "1",
-                    "package_name": "",
-                    "src_Loc": "foo:-1:-1"
-                },
-                {
-                    "_type": "a_a1Pa",
-                    "arguments": [],
-                    "module_name": "_in",
-                    "name": "n",
-                    "package_name": "",
-                    "src_Loc": "src/Haskell/Compute.hs:40:30"
-                },
-                {
-                    "_type": "a_a1Pa",
-                    "arguments": [],
-                    "module_name": "_in",
-                    "name": "n",
-                    "package_name": "",
-                    "src_Loc": "src/Haskell/Compute.hs:40:30"
-                },
-                {
-                    "_type": "OverLit",
-                    "arguments": [],
-                    "module_name": "_lit",
-                    "name": "1",
-                    "package_name": "",
-                    "src_Loc": "src/Haskell/Compute.hs:40:34"
-                },
-                {
-                    "_type": "HsInteger",
-                    "arguments": [],
-                    "module_name": "_lit",
-                    "name": "1",
-                    "package_name": "",
-                    "src_Loc": "foo:-1:-1"
-                },
-                {
-                    "_type": "a_a1Pa",
-                    "arguments": [],
-                    "module_name": "_in",
-                    "name": "n",
-                    "package_name": "",
-                    "src_Loc": "src/Haskell/Compute.hs:40:30"
-                },
-                {
-                    "_type": "a_a1Pa",
-                    "arguments": [],
-                    "module_name": "_in",
-                    "name": "n",
-                    "package_name": "",
-                    "src_Loc": "src/Haskell/Compute.hs:40:30"
-                },
-                {
-                    "_type": "OverLit",
-                    "arguments": [],
-                    "module_name": "_lit",
-                    "name": "1",
-                    "package_name": "",
-                    "src_Loc": "src/Haskell/Compute.hs:40:34"
-                },
-                {
-                    "_type": "HsInteger",
-                    "arguments": [],
-                    "module_name": "_lit",
-                    "name": "1",
-                    "package_name": "",
-                    "src_Loc": "foo:-1:-1"
-                }
-            ]
-        },
-        "power**src/Haskell/Compute.hs:32:1-5": {
-            "function_name": "power**src/Haskell/Compute.hs:32:1-5",
-            "src_loc": "src/Haskell/Compute.hs:32:1-5",
-            "stringified_code": "power a b = a ^ b",
-            "function_signature": "forall a b. (Num a, Integral b) => a -> b -> a",
-            "functions_called": [
-                {
-                    "_type": "a_a1Ps",
-                    "arguments": [],
-                    "module_name": "_in",
-                    "name": "a",
-                    "package_name": "",
-                    "src_Loc": "src/Haskell/Compute.hs:32:13"
-                },
-                {
-                    "_type": "a_a1Ps",
-                    "arguments": [],
-                    "module_name": "_in",
-                    "name": "a",
-                    "package_name": "",
-                    "src_Loc": "src/Haskell/Compute.hs:32:13"
-                },
-                {
-                    "_type": "b_a1Pt",
-                    "arguments": [],
-                    "module_name": "_in",
-                    "name": "b",
-                    "package_name": "",
-                    "src_Loc": "src/Haskell/Compute.hs:32:17"
-                }
-            ]
-        },
-        "modulus**src/Haskell/Compute.hs:27:1-7": {
-            "function_name": "modulus**src/Haskell/Compute.hs:27:1-7",
-            "src_loc": "src/Haskell/Compute.hs:27:1-7",
-            "stringified_code": "modulus a b = a `mod` b",
-            "function_signature": "forall a. Integral a => a -> a -> a",
-            "functions_called": [
-                {
-                    "_type": "a_a1PE",
-                    "arguments": [],
-                    "module_name": "_in",
-                    "name": "a",
-                    "package_name": "",
-                    "src_Loc": "src/Haskell/Compute.hs:27:15"
-                },
-                {
-                    "_type": "a_a1PE",
-                    "arguments": [],
-                    "module_name": "_in",
-                    "name": "a",
-                    "package_name": "",
-                    "src_Loc": "src/Haskell/Compute.hs:27:15"
-                },
-                {
-                    "_type": "a_a1PE",
-                    "arguments": [],
-                    "module_name": "_in",
-                    "name": "b",
-                    "package_name": "",
-                    "src_Loc": "src/Haskell/Compute.hs:27:23"
-                }
-            ]
-        },
-        "div**src/Haskell/Compute.hs:21:1-3": {
-            "function_name": "div**src/Haskell/Compute.hs:21:1-3",
-            "src_loc": "src/Haskell/Compute.hs:21:1-3",
-            "stringified_code": "div a b = a / b",
-            "function_signature": "forall a. Fractional a => a -> a -> a",
-            "functions_called": [
-                {
-                    "_type": "a_a1PK",
-                    "arguments": [],
-                    "module_name": "_in",
-                    "name": "a",
-                    "package_name": "",
-                    "src_Loc": "src/Haskell/Compute.hs:21:11"
-                },
-                {
-                    "_type": "a_a1PK",
-                    "arguments": [],
-                    "module_name": "_in",
-                    "name": "a",
-                    "package_name": "",
-                    "src_Loc": "src/Haskell/Compute.hs:21:11"
-                },
-                {
-                    "_type": "a_a1PK",
-                    "arguments": [],
-                    "module_name": "_in",
-                    "name": "b",
-                    "package_name": "",
-                    "src_Loc": "src/Haskell/Compute.hs:21:15"
-                }
-            ]
-        },
-        "mul**src/Haskell/Compute.hs:16:1-3": {
-            "function_name": "mul**src/Haskell/Compute.hs:16:1-3",
-            "src_loc": "src/Haskell/Compute.hs:16:1-3",
-            "stringified_code": "mul a b = a * b",
-            "function_signature": "forall a. Num a => a -> a -> a",
-            "functions_called": [
-                {
-                    "_type": "a_a1PQ",
-                    "arguments": [],
-                    "module_name": "_in",
-                    "name": "a",
-                    "package_name": "",
-                    "src_Loc": "src/Haskell/Compute.hs:16:11"
-                },
-                {
-                    "_type": "a_a1PQ",
-                    "arguments": [],
-                    "module_name": "_in",
-                    "name": "a",
-                    "package_name": "",
-                    "src_Loc": "src/Haskell/Compute.hs:16:11"
-                },
-                {
-                    "_type": "a_a1PQ",
-                    "arguments": [],
-                    "module_name": "_in",
-                    "name": "b",
-                    "package_name": "",
-                    "src_Loc": "src/Haskell/Compute.hs:16:15"
-                }
-            ]
-        },
-        "sub**src/Haskell/Compute.hs:11:1-3": {
-            "function_name": "sub**src/Haskell/Compute.hs:11:1-3",
-            "src_loc": "src/Haskell/Compute.hs:11:1-3",
-            "stringified_code": "sub a b = a - b",
-            "function_signature": "forall a. Num a => a -> a -> a",
-            "functions_called": [
-                {
-                    "_type": "a_a1PW",
-                    "arguments": [],
-                    "module_name": "_in",
-                    "name": "a",
-                    "package_name": "",
-                    "src_Loc": "src/Haskell/Compute.hs:11:11"
-                },
-                {
-                    "_type": "a_a1PW",
-                    "arguments": [],
-                    "module_name": "_in",
-                    "name": "a",
-                    "package_name": "",
-                    "src_Loc": "src/Haskell/Compute.hs:11:11"
-                },
-                {
-                    "_type": "a_a1PW",
-                    "arguments": [],
-                    "module_name": "_in",
-                    "name": "b",
-                    "package_name": "",
-                    "src_Loc": "src/Haskell/Compute.hs:11:15"
-                }
-            ]
-        },
-        "add**src/Haskell/Compute.hs:5:1-3": {
-            "function_name": "add**src/Haskell/Compute.hs:5:1-3",
-            "src_loc": "src/Haskell/Compute.hs:5:1-3",
-            "stringified_code": "add a b = a + b",
-            "function_signature": "forall a. Num a => a -> a -> a",
-            "functions_called": [
-                {
-                    "_type": "a_a1Q2",
-                    "arguments": [],
-                    "module_name": "_in",
-                    "name": "a",
-                    "package_name": "",
-                    "src_Loc": "src/Haskell/Compute.hs:5:11"
-                },
-                {
-                    "_type": "a_a1Q2",
-                    "arguments": [],
-                    "module_name": "_in",
-                    "name": "a",
-                    "package_name": "",
-                    "src_Loc": "src/Haskell/Compute.hs:5:11"
-                },
-                {
-                    "_type": "a_a1Q2",
-                    "arguments": [],
-                    "module_name": "_in",
-                    "name": "b",
-                    "package_name": "",
-                    "src_Loc": "src/Haskell/Compute.hs:5:15"
                 }
             ]
         }

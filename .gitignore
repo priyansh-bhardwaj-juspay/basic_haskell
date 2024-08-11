@@ -1,7 +1,6 @@
 dist-newstyle
 LICENSE
 *.py
-*.lock
 *.log
 venv
 .cabal-dir

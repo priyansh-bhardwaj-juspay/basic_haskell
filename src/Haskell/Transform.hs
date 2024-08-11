@@ -1,6 +1,6 @@
 module Haskell.Transform where
 
-import Data.Text
+import Data.Text (Text)
 import qualified Haskell.Types as HT
 
 mkSuccessResponse :: Maybe Text -> a -> HT.Response a
